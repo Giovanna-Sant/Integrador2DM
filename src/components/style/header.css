@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Days+One&display=swap');
+
+
+body {
+    background-image: linear-gradient(to right top, #1e1e1e, #1f1e26, #211d2f, #231c36, #251a3e, #251a3e, #251a3e, #251a3e, #231c36, #211d2f, #1f1e26, #1e1e1e);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.icon {
+    max-height: 28px;
+    margin-right: 8px;
+}
+
+/* Header config */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 32px;
+    
+    .opcoes {
+        display: flex;
+        gap: 32px;
+        margin: 0px 12px;
+    }
+    
+    img {
+        max-width: 100px;
+    }
+
+    p {
+        font-family: "Darker Grotesque", sans-serif;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 24px;
+    }
+}

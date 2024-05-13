@@ -1,0 +1,48 @@
+@import "../src/components/style/footer.css";
+@import "../src/components/style/header.css";
+
+
+/* Variáveis de Cor */
+
+:root{
+    --cor-0: #FFFFFF;
+    --cor-1: #F1F1F1;
+    --cor-2: #D9D9D9;
+    --cor-3: #46FF29;
+    --cor-4: #A916FF;
+    --cor-5: #59289F;
+    --cor-6: #1E1E1E;
+    --cor-7: #000000;
+}
+
+.cor-0 {
+  color: var(--cor-0);
+}
+
+.cor-1 {
+  color: var(--cor-1);
+}
+
+.cor-2 {
+  color: var(--cor-2);
+}
+
+.cor-3 {
+  color: var(--cor-3);
+}
+
+.cor-4 {
+  color: var(--cor-4);
+}
+
+.cor-5 {
+  color: var(--cor-5);
+}
+
+.cor-6 {
+  color: var(--cor-6);
+}
+
+.cor-7 {
+  color: var(--cor-7);
+}
