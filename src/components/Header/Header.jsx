@@ -1,6 +1,6 @@
 import "./header.css"
 import logo from "../../img/Logo.svg"
-import perfil from "../../img/perfil.svg"
+import perfil from "../../img/Icons/perfil.svg"
 
 const Header = () => {
     return (

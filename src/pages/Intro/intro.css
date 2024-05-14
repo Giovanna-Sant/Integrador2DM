@@ -1,0 +1,17 @@
+.aaa {
+    background-image: url("../../img/Background/img_intro.png");
+    background-size: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12vh 0px 16vh;
+    text-align: center;
+}
+
+.txt {
+    max-width: 350px;
+    margin-bottom: 32px;
+}
