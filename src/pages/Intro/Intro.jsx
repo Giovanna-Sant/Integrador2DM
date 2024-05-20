@@ -11,9 +11,7 @@ const Intro = () => {
 
             <p className="cor-0 fonte-gerais txt">Nosso compromisso é com você e <span className="cor-3">seu bem-estar</span>. O GymRats pode <span className="cor-3">transformar sua rotina</span> de exercícios em uma experiência mais rica e diversificada.</p>
             <a to='/'>
-            <button className="cor-0 fonte-gerais">
-                seja membro
-            </button>
+            <button className="cor-0 fonte-gerais">Seja membro</button>
             </a>
         </div>
     </div>

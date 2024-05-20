@@ -1,17 +1,27 @@
+#planos-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6vh 4vh;
+}
+
 .planos {
     display: flex;
     justify-content: space-between;
-    margin: 8vh 4vh;
+    margin: 5vh 4vh;
+    gap: 5vw;
 }
 
 .bronze, .prata, .ouro {
     background-size: cover;
-    padding: 1vh 2vw;
+    background-position: center;
+    padding: 4vh 2vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-align: center
+    text-align: center;
+    width: 14vw;
 }
 
 .beneficios {
@@ -35,5 +45,22 @@
 
 .ouro {
     background-color: #46FF29;
+
+    img {
+        padding: 16px 0px 0px 0px;
+    }
 }
 
+.sobre-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.confira {
+    margin: 8vh 4vw;
+    img {
+        max-width: 70vw;
+    }
+}

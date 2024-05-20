@@ -1,0 +1,19 @@
+.brand-cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 6vh;
+}
+
+
+.marcas {
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    margin-top: 4vh;
+    
+    img {
+        max-height: 40px;
+        margin: 0px 20px
+    }   
+}
