@@ -25,7 +25,7 @@
 }
 
 .beneficios {
-    margin: 6vh 0px 6vh;
+    margin: 3vh 0px 3vh;
 }
 
 .bronze p, .prata p, .ouro p {
@@ -47,7 +47,7 @@
     background-color: #46FF29;
 
     img {
-        padding: 16px 0px 0px 0px;
+        padding: 0px 0px 15px 0px;
     }
 }
 
@@ -56,11 +56,14 @@
     flex-direction: column;
     align-items: flex-end;
     text-align: end;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -140%);
 }
 
 .confira {
-    margin: 8vh 4vw;
+    margin: 8vh 4vw -40vh;
     img {
-        max-width: 70vw;
+        max-width: 65vw;
     }
 }

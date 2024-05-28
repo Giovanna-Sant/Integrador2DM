@@ -21,9 +21,9 @@ const Home = () => {
                 </div>
 
                 <div className="cor-7 ouro">
+                    <img src="src\img\Icons\medalha.svg" alt="icon de medalha roxo"/>
                     <h1 className="fonte-05">OURO</h1>
                     <h2 className="fonte-gerais">R$ <span className="fonte-subtitulos">120,90</span>/mês</h2>
-                    <img src="src\img\Icons\medalha.svg" alt="icon de medalha roxo"/>
 
                     <div className="beneficios">
                         <p>Todos os benefícios dos planos INFERIORES</p>

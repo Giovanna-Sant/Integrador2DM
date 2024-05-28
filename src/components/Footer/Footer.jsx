@@ -15,7 +15,7 @@ const Footer = () => {
                 <img src={logoFooter} alt="logo footer" id="logo-footer"/>
 
                 <div>
-                    <div className="txt">
+                    <div className="cor-0 fonte-gerais txt">
                         <p>A GymRats foi um projeto pensado e desenvolvido para fins educacionais pela equipe da turma <span className="verde">2DM</span> do <span className="verde">SENAI Suíço-Brasileiro</span></p>
                         <p>Acompanhe o desenvolvimento de nosso projeto e <span className="roxo">siga nossos devs!</span></p>
                     </div>
@@ -24,7 +24,7 @@ const Footer = () => {
                     <img src={linktree} className="icon" alt="icon linktree"/>
                 </div>
             </div>
-            <div className="right">
+            <div className="cor-0 fonte-gerais right">
                 <p>© GymRats 2024, SENAI Suíço</p>
             </div>
         </div>

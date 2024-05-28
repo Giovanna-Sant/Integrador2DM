@@ -1,0 +1,62 @@
+.img-background-sobre {
+    background-image: url("../../img/Background/fundo-sobre.png");
+    background-size: cover;
+}
+
+.sobreimg {
+    padding: 42vh 4vw 6vh 4vw
+}
+
+.sub {
+    font-size: 35px;
+}
+
+.sobre {
+    margin: 10vh 4vw;
+}
+
+.qualidades {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4vh 0vw;
+    
+    p {
+        max-width: 10vw;
+        text-align: center;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 50px;
+    }
+    
+}
+
+.faq {
+    margin-bottom: 10vh;
+}
+
+.faq h1::before{
+    content: "";
+    position: absolute;
+    background-color: #59289F;
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0 100%);
+    width: 340px;
+    height: 24px;
+    left: 0px;
+    z-index: -1;
+}
+
+.dev-ind {
+    background-color: #A916FF;
+    
+    img {
+        max-width: 5vw;
+        border-radius: 50%;
+    }
+}

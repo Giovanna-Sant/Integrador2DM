@@ -1,17 +1,19 @@
 import './App.css';
 import Header from './components/Header/Header';
-import Intro from './pages/Intro/Intro';
-import Home from './pages/Home/Home';
+import SobreImage from './pages/Sobre/SobreImage';
+import Sobre from './pages/Sobre/Sobre'
+import Brands from './components/Brands/Brands'
 import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <div className='aaa'>
+      <div className='img-background-sobre'>
       <Header/>
-      <Intro/>
+      <SobreImage/>
       </div>
-      <Home/>
+      <Sobre/>
+      <Brands/>
       <Footer/>
     </div>
   );
