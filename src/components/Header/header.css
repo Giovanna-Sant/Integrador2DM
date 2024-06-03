@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Days+One&display=swap');
+
 /* Header config */
 .header {
     display: flex;
@@ -23,4 +23,8 @@
         color: #ffffff;
         font-size: 24px;
     }
+}
+Link {
+    text-decoration: none;
+    
 }

@@ -1,22 +1,25 @@
 import "./header.css"
-import logo from "../../img/Logo.svg"
-import perfil from "../../img/Icons/perfil.svg"
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
         <div className="header">
-            <a to='/'>
-                <img src={logo} alt="logo"/>
-            </a>
+            <Link to='/'>
+                <img src="src\img\Logo.svg" alt="logo"/>
+            </Link>
 
             <div className="opcoes">
-                <a><p className="cor-0">Planos</p></a>
-                <a><p className="cor-0">Sobre</p></a>
+                <Link to='/planos'>
+                    <p className="cor-0">Planos</p>
+                </Link>
+                <Link to='/sobre'>
+                    <p className="cor-0">Sobre</p>
+                </Link>
             </div>
             
-            <a to=''>
-                <img src={perfil} alt="perfil" className="icon"/>
-            </a>
+            <Link to=''>
+                <img src="src\img\Icons\perfil.svg" alt="perfil" className="icon"/>
+            </Link>
         </div>
     )
 }

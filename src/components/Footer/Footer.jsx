@@ -16,8 +16,8 @@ const Footer = () => {
 
                 <div>
                     <div className="cor-0 fonte-gerais txt">
-                        <p>A GymRats foi um projeto pensado e desenvolvido para fins educacionais pela equipe da turma <span className="verde">2DM</span> do <span className="verde">SENAI Suíço-Brasileiro</span></p>
-                        <p>Acompanhe o desenvolvimento de nosso projeto e <span className="roxo">siga nossos devs!</span></p>
+                        <p>A GymRats foi um projeto pensado e desenvolvido para fins educacionais pela equipe da turma <span className="cor-3">2DM</span> do <span className="cor-3">SENAI Suíço-Brasileiro</span></p>
+                        <p>Acompanhe o desenvolvimento de nosso projeto e <span className="cor-4">siga nossos devs!</span></p>
                     </div>
 
                     <img src={github}   className="icon" alt="icon github"/>

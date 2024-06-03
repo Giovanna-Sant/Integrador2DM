@@ -52,11 +52,25 @@
     z-index: -1;
 }
 
+.devs {
+    display: flex;
+    margin: 4vh 0vw
+}
+
 .dev-ind {
-    background-color: #A916FF;
-    
+    background-color: #59289F;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vh;
+    max-width: 20vw;
+    border-radius: 2%;
+    margin-right: 3vh;
+
     img {
-        max-width: 5vw;
+        max-width: 8vw;
         border-radius: 50%;
+        margin: 2vh;
     }
 }
