@@ -11,7 +11,7 @@
     font-size: 35px;
 }
 
-.sobre {
+.sobre-cont {
     margin: 10vh 4vw;
 }
 
@@ -39,6 +39,11 @@
 
 .faq {
     margin-bottom: 10vh;
+
+    img {
+        margin-top: 4vh;
+        max-width: 100%;
+    }
 }
 
 .faq h1::before{

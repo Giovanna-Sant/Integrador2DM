@@ -1,9 +1,24 @@
 import "./home.css"
+import { Link } from "react-router-dom"
+import Header from "../../components/Header/Header"
 import Brands from "../../components/Brands/Brands"
 
 const Home = () => {
     return (
         <div className="home">
+            <div className="img-background-home">
+                <Header/>
+                <div className="info">
+                <p className="cor-0 fonte-gerais">Conheça nossos planos!</p>
+                <p className="cor-3 fonte-03">ASSINATURAS</p>
+                <p className="cor-0 fonte-04">EM ACADEMIAS</p>
+
+                <p className="cor-0 fonte-gerais txt">Nosso compromisso é com você e <span className="cor-3">seu bem-estar</span>. O GymRats pode <span className="cor-3">transformar sua rotina</span> de exercícios em uma experiência mais rica e diversificada.</p>
+                <Link to='/planos'>
+                <button className="cor-0 fonte-gerais">Seja membro</button>
+                </Link>
+                </div>
+            </div>
             <div id="planos-cont">
                 <p className="cor-0 fonte-subtitulos">Confira e assine nossos planos!</p>
             <div className="planos">
@@ -59,9 +74,9 @@ const Home = () => {
                 <p className="cor-3 fonte-04">COMPANHIA</p>
 
                 <p className="cor-0 fonte-gerais txt">Nossa missão é ser uma companhia de assinatura de planos referência em <span className="cor-3">acessibilidade</span>. Para isso, contamos com uma equipe <span className="cor-3">diversa</span>. Confira!</p>
-                <a to='/'>
+                <Link to='/sobre'>
                 <button className="cor-0 fonte-gerais">Sobre nós</button>
-                </a>
+                </Link>
             </div>
         </div>
     </div>

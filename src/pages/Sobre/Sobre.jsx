@@ -1,10 +1,19 @@
 import './sobre.css'
-import SobreImage from './SobreImage'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
+import Brands from '../../components/Brands/Brands'
 
 const Sobre = () => {
     return (
         <div className='sobre'>
-        <SobreImage/>
+            <div className='img-background-sobre'>
+            <Header/>
+            <div className='sobreimg'>
+                <p className="cor-0 fonte-04 sub">NA GYMRATS PRIORIZAMOS</p>
+                <p className="cor-3 fonte-02">A SUA SAÚDE</p>
+            </div>
+            </div>
+            <div className='sobre-cont'>
             <div className='faq'>
                 <h1 className='cor-0 fonte-05'>O QUE SOMOS?</h1>
                 <p className='cor-0 fonte-gerais'>Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Et netus et malesuada fames ac. Laoreet suspendisse interdum consectetur libero id faucibus.uis auctor elit sed vulutate mi sit amet mauris. Interdum velit euismod in pellentesque massa. Ornare arcu dui vivamus arcu felis bibendum. Eros donec ac odio tempor orci</p>
@@ -50,7 +59,7 @@ const Sobre = () => {
                         <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Gabriel"/>
                         <p className='cor-0 fonte-gerais'>Gabriel dos Anjos</p>
                         <p className='fonte-gerais'><strong>Dev Ops</strong></p>
-                        <p className='cor-0 fonte-gerais'>Gabriel é extreammente empenhado e, durando o projeto, exerceu o cargo de Dev Ops, que tem como objetivo integrar todas as partes e torná-las funcionais.</p>
+                        <p className='cor-0 fonte-gerais'>Gabriel é extremamente empenhado e, durando o projeto, exerceu o cargo de Dev Ops, que tem como objetivo integrar todas as partes e torná-las funcionais.</p>
                         <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
                     </div>
                     
@@ -90,7 +99,7 @@ const Sobre = () => {
                         <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Leonardo"/>
                         <p className='cor-0 fonte-gerais'>Leonardo G.</p>
                         <p className='fonte-gerais'><strong>Front-End Dev</strong></p>
-                        <p className='cor-0 fonte-gerais'>Além de exercer o cargo de <span className='cor-3'>Tech Lead</span> geral, Cauã também faz parte da equipe de desenvolvedores front-end. Possui 19 anos e grande afinidade com tecnologias como JavaScript.</p>
+                        <p className='cor-0 fonte-gerais'>Atuou como desenvolvedor front-end, se dedicando na responsividade das páginas. Tem 19 anos, possui uma boa relação com tecnologias de front, como JavaScript.</p>
                         <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
                     </div>
                     
@@ -98,7 +107,7 @@ const Sobre = () => {
                         <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Lívia"/>
                         <p className='cor-0 fonte-gerais'>Lívia Bello</p>
                         <p className='fonte-gerais'><strong>Back-End Dev</strong></p>
-                        <p className='cor-0 fonte-gerais'>Além de exercer o cargo de <span className='cor-3'>Tech Lead</span> geral, Cauã também faz parte da equipe de desenvolvedores front-end. Possui 19 anos e grande afinidade com tecnologias como JavaScript.</p>
+                        <p className='cor-0 fonte-gerais'>Lívia integra um ótimo papel na equipe de Back-End, sendo produtiva e proativa. Tem experiências diversas com tecnologia, e possui boa relação com C.</p>
                         <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
                     </div>
                     
@@ -109,8 +118,11 @@ const Sobre = () => {
                 <h1 className='cor-0 fonte-05'>ONDE ESTAMOS?</h1>
                 <p className='cor-0 fonte-gerais'>Apesar de estarmos presentes online de forma mundial, precisamos de algum lugar para situar como nossa origem, e foi, no <span className='cor-3'>SENAI Suíço-Brasileira</span> Paulo Ernesto Tolle que nasceu a GymRats, no distrito de Santo Amaro, dentro da grande São Paulo. Através da orientação de professores experientes e do incentivo de colegas e funcionários da escola, construímos e concluímos este projeto integrador.</p>
 
-                <img src="src\img\Localizacao.png" alt="Print do Google Maps da area situa" />
+                <img src="src/img/Local.PNG" alt="Print do Google Maps da area situada"/>
+                </div>
+                <Brands/>
             </div>
+            <Footer/>
         </div>
     )
 }
