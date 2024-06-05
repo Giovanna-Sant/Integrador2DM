@@ -2,6 +2,7 @@ import './sobre.css'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Brands from '../../components/Brands/Brands'
+import { Swiper, SwiperSlide } from 'swiper'
 
 const Sobre = () => {
     return (
@@ -16,7 +17,7 @@ const Sobre = () => {
             <div className='sobre-cont'>
             <div className='faq'>
                 <h1 className='cor-0 fonte-05'>O QUE SOMOS?</h1>
-                <p className='cor-0 fonte-gerais'>Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Et netus et malesuada fames ac. Laoreet suspendisse interdum consectetur libero id faucibus.uis auctor elit sed vulutate mi sit amet mauris. Interdum velit euismod in pellentesque massa. Ornare arcu dui vivamus arcu felis bibendum. Eros donec ac odio tempor orci</p>
+                <p className='cor-0 fonte-gerais'>Nossa missão é ser uma rede de assinatura referência em acessibilidade, cuidado especial com cada cliente e promoção de um estilo de vida saudável. Através de nossos passes de assinatura, garantimos um suporte total para uma vida mais saudável, oferecendo uma ampla rede de academias filiadas conosco. Nosso sistema é procurado por diversas empresas para utilizar nossa assinatura como benefício para seus funcionários. Priorizamos um ambiente acolhedor e inclusivo, incentivando as práticas físicas para todos, colocando em destaque que deficiências nunca serão uma impossibilidade para se exercitar.</p>
                 
                 <div className='qualidades'>
                     <span>
@@ -39,22 +40,26 @@ const Sobre = () => {
                 <p className='cor-0 fonte-gerais'>A GymRats conta com uma gama diversa de pessoas que possibilitam este projeto estar de pé. Nossos desenvolvedores foram bem escolhidos e trabalharam em equipe para garantir o melhor resultado para você, companheiro da GymRats. Abaixo, conheça um pouco de cada um de toda nossa equipe e <span className='cor-3'>acompanhe nossos desenvolvedores</span> em outros projetos!</p>
             
                 <div className='devs'>
-                    <div className='dev-ind'>
-                        <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Cauã"/>
-                        <p className='cor-0 fonte-gerais'>Cauã Abreu</p>
-                        <p className='fonte-gerais'><strong>Tech Lead</strong></p>
-                        <p className='cor-0 fonte-gerais'>Além de exercer o cargo de Tech Lead geral, Cauã também faz parte da equipe de  <span className='cor-3'>desenvolvedores front-end</span>. Possui 19 anos e grande afinidade com tecnologias como JavaScript.</p>
-                        <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
-                    </div>
-                    
-                    <div className='dev-ind'>
-                        <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Giovanna"/>
-                        <p className='cor-0 fonte-gerais'>Giovanna Santos</p>
-                        <p className='fonte-gerais'><strong>Tech Lead</strong></p>
-                        <p className='cor-0 fonte-gerais'>Exerce o cargo de <span className='cor-3'>Tech Lead</span> geral, porém também liderou a equipe de Front-End. Desenvolveu a essência do <span className='cor-3'>UX/UI Design</span>, possuindo grande afinidade com a área de front.</p>
-                        <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
-                    </div>
-                    
+                    <Swiper>
+                        <SwiperSlide>
+                        <div className='dev-ind'>
+                            <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Cauã"/>
+                            <p className='cor-0 fonte-gerais'>Cauã Abreu</p>
+                            <p className='fonte-gerais'><strong>Tech Lead</strong></p>
+                            <p className='cor-0 fonte-gerais'>Além de exercer o cargo de Tech Lead geral, Cauã também faz parte da equipe de  <span className='cor-3'>desenvolvedores front-end</span>. Possui 19 anos e grande afinidade com tecnologias como JavaScript.</p>
+                            <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='dev-ind'>
+                            <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Giovanna"/>
+                            <p className='cor-0 fonte-gerais'>Giovanna Santos</p>
+                            <p className='fonte-gerais'><strong>Tech Lead</strong></p>
+                            <p className='cor-0 fonte-gerais'>Exerce o cargo de <span className='cor-3'>Tech Lead</span> geral, porém também liderou a equipe de Front-End. Desenvolveu a essência do <span className='cor-3'>UX/UI Design</span>, possuindo grande afinidade com a área de front.</p>
+                            <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
                     <div className='dev-ind'>
                         <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Gabriel"/>
                         <p className='cor-0 fonte-gerais'>Gabriel dos Anjos</p>
@@ -62,6 +67,25 @@ const Sobre = () => {
                         <p className='cor-0 fonte-gerais'>Gabriel é extremamente empenhado e, durando o projeto, exerceu o cargo de Dev Ops, que tem como objetivo integrar todas as partes e torná-las funcionais.</p>
                         <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
                     </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+
+                    </SwiperSlide>
+
+
+
+                    </Swiper>
+
+
+                    
+                    
+                    
                     
                     <div className='dev-ind'>
                         <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Erick"/>

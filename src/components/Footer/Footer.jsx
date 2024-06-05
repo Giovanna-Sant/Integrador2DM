@@ -1,7 +1,4 @@
-import "./footer.css"   
-import logoFooter from "../../img/logoFooter.svg"
-import github from "../../img/Icons/github.svg"
-import linktree from "../../img/Icons/linktree.svg"
+import "./footer.css"
 
 const Footer = () => {
     return (
@@ -12,7 +9,7 @@ const Footer = () => {
             </div>
 
             <div className="flex">
-                <img src={logoFooter} alt="logo footer" id="logo-footer"/>
+                <img src="src/img/logoFooter.svg" alt="logo footer" id="logo-footer"/>
 
                 <div>
                     <div className="cor-0 fonte-gerais txt">
@@ -20,8 +17,12 @@ const Footer = () => {
                         <p>Acompanhe o desenvolvimento de nosso projeto e <span className="cor-4">siga nossos devs!</span></p>
                     </div>
 
-                    <img src={github}   className="icon" alt="icon github"/>
-                    <img src={linktree} className="icon" alt="icon linktree"/>
+                    <a href="https://github.com/Giovanna-Sant/Integrador2DM.git">
+                        <img src="src/img/Icons/github.svg"   className="icon" alt="icon github"/>
+                    </a>
+                    <a>
+                        <img src="src/img/Icons/linktree.svg" className="icon" alt="icon linktree"/>
+                    </a>
                 </div>
             </div>
             <div className="cor-0 fonte-gerais right">

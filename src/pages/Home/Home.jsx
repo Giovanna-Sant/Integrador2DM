@@ -2,6 +2,7 @@ import "./home.css"
 import { Link } from "react-router-dom"
 import Header from "../../components/Header/Header"
 import Brands from "../../components/Brands/Brands"
+import Footer from "../../components/Footer/Footer"
 
 const Home = () => {
     return (
@@ -79,6 +80,7 @@ const Home = () => {
                 </Link>
             </div>
         </div>
+        <Footer/>
     </div>
     )
 }
