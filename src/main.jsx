@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 import Home from './pages/Home/Home'
 import Sobre from './pages/Sobre/Sobre';
+import Perfil from './pages/Perfil/Perfil';
+import Signup from './pages/Signup/Signup';
 
 import './index.css';
 
@@ -13,6 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
           <Route element={<App/>}>
+          <Route path='/perfil' element={<Perfil/>}/>
+          <Route path='/cadastro' element={<Signup/>}/>
           </Route>
           <Route path='/' element={<Home/>}/>
           <Route path='/sobre' element={<Sobre/>}/>

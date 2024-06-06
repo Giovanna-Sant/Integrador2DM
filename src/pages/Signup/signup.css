@@ -1,0 +1,80 @@
+.right{
+    background-image: linear-gradient(180deg, #2C1650, #190B30, #030105);
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-box {
+    background-image: linear-gradient(360deg, #632EB5, #10071F);
+    font-family: "Darker Grotesque", sans-serif;
+    color: white;
+    border: 1px solid var(--cor-2);
+    border-radius: 10px;
+    padding: 1.25em;
+    position: relative;
+    z-index: 1;
+}
+
+.right-box::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/Background/bg-form.png);
+    border-radius: 10px;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.right-box p {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.right-box hr {
+    border-color: var(--cor-4);
+    margin-top: 1em;
+}
+
+#flogo {
+    width: 5em;
+}
+
+#ftitle {
+    text-transform: capitalize;
+    margin-bottom: .5em;
+    font-size: 24px;
+}
+
+.ent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .33em;
+}
+
+.ent label {
+    font-size: 18px;
+}
+
+.ent input {
+    padding: .65em;
+}
+
+.right-box button {
+    background: var(--cor-5);
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#link-form {
+    text-decoration: none;
+}
+
+#link-form:hover {
+    text-decoration: underline;
+}

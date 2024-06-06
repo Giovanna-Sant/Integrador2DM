@@ -1,8 +1,9 @@
 import './sobre.css'
+import './slider.css'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Brands from '../../components/Brands/Brands'
-import { Swiper, SwiperSlide } from 'swiper'
+import Flickity from "react-flickity-component";
 
 const Sobre = () => {
     return (
@@ -40,26 +41,23 @@ const Sobre = () => {
                 <p className='cor-0 fonte-gerais'>A GymRats conta com uma gama diversa de pessoas que possibilitam este projeto estar de pé. Nossos desenvolvedores foram bem escolhidos e trabalharam em equipe para garantir o melhor resultado para você, companheiro da GymRats. Abaixo, conheça um pouco de cada um de toda nossa equipe e <span className='cor-3'>acompanhe nossos desenvolvedores</span> em outros projetos!</p>
             
                 <div className='devs'>
-                    <Swiper>
-                        <SwiperSlide>
-                        <div className='dev-ind'>
-                            <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Cauã"/>
-                            <p className='cor-0 fonte-gerais'>Cauã Abreu</p>
-                            <p className='fonte-gerais'><strong>Tech Lead</strong></p>
-                            <p className='cor-0 fonte-gerais'>Além de exercer o cargo de Tech Lead geral, Cauã também faz parte da equipe de  <span className='cor-3'>desenvolvedores front-end</span>. Possui 19 anos e grande afinidade com tecnologias como JavaScript.</p>
-                            <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='dev-ind'>
-                            <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Giovanna"/>
-                            <p className='cor-0 fonte-gerais'>Giovanna Santos</p>
-                            <p className='fonte-gerais'><strong>Tech Lead</strong></p>
-                            <p className='cor-0 fonte-gerais'>Exerce o cargo de <span className='cor-3'>Tech Lead</span> geral, porém também liderou a equipe de Front-End. Desenvolveu a essência do <span className='cor-3'>UX/UI Design</span>, possuindo grande afinidade com a área de front.</p>
-                            <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                <Flickity elementType="div" options={{ pageDots: true }} reloadOnUpdate>
+                    <div className='dev-ind'>
+                        <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Cauã"/>
+                        <p className='cor-0 fonte-gerais'>Cauã Abreu</p>
+                        <p className='fonte-gerais'><strong>Tech Lead</strong></p>
+                        <p className='cor-0 fonte-gerais'>Além de exercer o cargo de Tech Lead geral, Cauã também faz parte da equipe de  <span className='cor-3'>desenvolvedores front-end</span>. Possui 19 anos e grande afinidade com tecnologias como JavaScript.</p>
+                        <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
+                    </div>
+                    
+                    <div className='dev-ind'>
+                        <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Giovanna"/>
+                        <p className='cor-0 fonte-gerais'>Giovanna Santos</p>
+                        <p className='fonte-gerais'><strong>Tech Lead</strong></p>
+                        <p className='cor-0 fonte-gerais'>Exerce o cargo de <span className='cor-3'>Tech Lead</span> geral, porém também liderou a equipe de Front-End. Desenvolveu a essência do <span className='cor-3'>UX/UI Design</span>, possuindo grande afinidade com a área de front.</p>
+                        <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
+                    </div>
+
                     <div className='dev-ind'>
                         <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Gabriel"/>
                         <p className='cor-0 fonte-gerais'>Gabriel dos Anjos</p>
@@ -67,26 +65,7 @@ const Sobre = () => {
                         <p className='cor-0 fonte-gerais'>Gabriel é extremamente empenhado e, durando o projeto, exerceu o cargo de Dev Ops, que tem como objetivo integrar todas as partes e torná-las funcionais.</p>
                         <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
                     </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
 
-                    </SwiperSlide>
-                    <SwiperSlide>
-
-                    </SwiperSlide>
-                    <SwiperSlide>
-
-                    </SwiperSlide>
-
-
-
-                    </Swiper>
-
-
-                    
-                    
-                    
-                    
                     <div className='dev-ind'>
                         <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Erick"/>
                         <p className='cor-0 fonte-gerais'>Erick Cardoso</p>
@@ -94,7 +73,7 @@ const Sobre = () => {
                         <p className='cor-0 fonte-gerais'>Além de exercer o cargo de <span className='cor-3'>Tech Lead</span> geral, Cauã também faz parte da equipe de desenvolvedores front-end. Possui 19 anos e grande afinidade com tecnologias como JavaScript.</p>
                         <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
                     </div>
-                    
+
                     <div className='dev-ind'>
                         <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - Erica"/>
                         <p className='cor-0 fonte-gerais'>Erica Lelis</p>
@@ -102,7 +81,7 @@ const Sobre = () => {
                         <p className='cor-0 fonte-gerais'>Erica desempenha um grande papel no projeto, guiando boa parte do Back-End e da vertente de Banco de dados. Possui um ótimo perfil de liderança e de proatividade.</p>
                         <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
                     </div>
-                    
+
                     <div className='dev-ind'>
                         <img src="src\img\Devs\caua.jpg" alt="Imagem de perfil - João"/>
                         <p className='cor-0 fonte-gerais'>João Paulo</p>
@@ -134,7 +113,7 @@ const Sobre = () => {
                         <p className='cor-0 fonte-gerais'>Lívia integra um ótimo papel na equipe de Back-End, sendo produtiva e proativa. Tem experiências diversas com tecnologia, e possui boa relação com C.</p>
                         <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"></img>
                     </div>
-                    
+                </Flickity>
                 </div>
             </div>
 
