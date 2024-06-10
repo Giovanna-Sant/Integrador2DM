@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 import Home from './pages/Home/Home'
 import Sobre from './pages/Sobre/Sobre';
+import Pagamento from './pages/Pagamento/Pagamento';
 
 import './index.css';
 
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route element={<App/>}>
             <Route path='/' element={<Home/>} />
             <Route path='/sobre' element={<Sobre/>}/>
+            <Route path='/pagamento' element={<Pagamento/>}/>
           </Route>
       </Routes>
     </BrowserRouter>

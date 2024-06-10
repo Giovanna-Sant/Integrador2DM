@@ -1,0 +1,159 @@
+.container_pagamento{
+    text-align: center;
+}
+
+.title_pagamento {
+    color: white;
+    font-size: 30px;
+}
+
+.title_pagamento span{
+    font-size: 40px;
+}
+
+.container_main_pagamento{  
+    margin: 30px 30px 60px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.container_main_pagamento .container{
+    flex: 1;
+    height: 100%;
+    background-color: #59289F;
+    padding: 20px 20px;
+}
+
+.container_1{
+    text-align: left;
+}
+
+.title_opcao{
+    font-size: 20px;
+    color: white;
+}
+
+.confirmar{
+    font-size: 28px;
+}
+
+.assinatura{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.resumo{
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container_plano{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+    
+.plano{
+    font-weight: bold;
+}
+
+.container_beneficios{
+    text-align: left;
+}
+
+.container_beneficios p, .container_beneficios h3{
+    margin: 20px 0px;
+}
+
+.container_3 button{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #46FF29;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonPagamento{
+    width: 40%;
+    margin: 10px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    background: rgb(45,28,68);
+    background: linear-gradient(180deg, rgba(45,28,68,1) 0%, rgba(54,23,98,1) 100%);
+    cursor: pointer;    
+}
+
+.buttonPagamento:hover{
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(54,23,98,1) 100%);
+    transition: background 2s; 
+}
+
+.selected{
+    background: #46FF29;
+    color: black;
+    font-weight: bold; 
+}
+
+.selected:hover{
+    background: linear-gradient(180deg, rgb(17, 201, 47) 0%, rgb(20, 222, 88) 100%);   
+    transition: background 2s;  
+}
+
+@media screen and (max-width: 900px) {
+    .container_main_pagamento .container{
+        flex: none;
+        border-radius: 20px;
+    }
+
+    .container_main_pagamento{
+        margin: 30px 0px 60px 0px;
+    }
+
+    .title_pagamento, .title_pagamento span{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .container_1 {
+        width: 60%;
+    }
+
+    .container_2{
+        width: 30%;
+    }
+
+    .container_2 h2, .container_2 h2 span{
+        font-size: 15px;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_2 button{
+        width: 100%;
+    }
+
+    .container_3{
+        width: 40%;
+    }
+
+    .container_3 h1, .container_3 p{
+        font-size: 20px;
+    }
+}

@@ -20,8 +20,15 @@ const Footer = () => {
                         <p>Acompanhe o desenvolvimento de nosso projeto e <span className="cor-4">siga nossos devs!</span></p>
                     </div>
 
-                    <img src={github}   className="icon" alt="icon github"/>
-                    <img src={linktree} className="icon" alt="icon linktree"/>
+                    <div className="github">
+                        <img src={github}   className="icon" alt="icon github"/>
+                        <p className="cor-0 fonte-gerais">GitHub</p>
+                    </div>
+                    
+                    <div className="linktree">
+                        <img src={linktree} className="icon" alt="icon linktree"/>
+                        <p className="cor-0 fonte-gerais">Linktree</p>
+                    </div>
                 </div>
             </div>
             <div className="cor-0 fonte-gerais right">
