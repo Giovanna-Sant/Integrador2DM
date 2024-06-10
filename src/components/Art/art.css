@@ -1,0 +1,34 @@
+.left-art {
+    width: 50vw;
+    height: 100vh;
+    background-image: url("../../img/Background/bgLogin.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.left-box {
+    font-family: "Darker Grotesque", sans-serif;
+    padding: 2em;
+    background: rgba(78, 59, 106, 50%);
+}
+
+.left-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 0.25em;
+}
+
+.left-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 950px) {
+    .left-art {
+        display: none;
+    }
+}
