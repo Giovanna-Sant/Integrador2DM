@@ -1,10 +1,15 @@
 import "login.css";
 import Art from '../../components/Art/Art';
+import Header from '../../components/Header/Header'
 
 const Login = () => {
     return(
         <div className="all">
+            <Art/>
             <div className="right">
+                <div className="cab">
+                    <Header/>
+                </div>
                 <div className="right-box">
                     <div className="right-box-content">
                         <img src="src\img\Logo.svg" alt="Logo da GymRats" id="flogo"/>

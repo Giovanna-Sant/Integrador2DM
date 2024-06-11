@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode"
 import Art from '../../components/Art/Art'
+import Header from '../../components/Header/Header';
  
 const Signup = () => {
     const [newUser, setNewUser] = useState({nome: '', sobrenome: '', email: '', senha: '', confirma_senha: ''})
@@ -40,6 +41,9 @@ const Signup = () => {
             <Art/>
             <div className="right">
                 <div className="right-box">
+                        <div className="cab">
+                            <Header/>
+                        </div>
                         <div className="right-box-content">
                             <img src="src\img\Logo.svg" alt="Logo da GymRats" id="flogo"/>
                             <h2 id="ftitle">Crie sua conta agora mesmo</h2>
