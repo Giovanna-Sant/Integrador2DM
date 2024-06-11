@@ -2,13 +2,15 @@ import "./signup.css";
 import api from "../../config/axios"
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom";
-import { jwtDecode } from "jwt-decode"
-import Art from '../../components/Art/Art'
+import { Link } from "react-router-dom";
+import { jwtDecode } from "jwt-decode";
+import Art from '../../components/Art/Art';
 import Header from '../../components/Header/Header';
  
 const Signup = () => {
     const [newUser, setNewUser] = useState({nome: '', sobrenome: '', email: '', senha: '', confirma_senha: ''})
     const navigate = useNavigate()
+    
     const postNewUser = async(e) => {
         try {
             e.preventDefault()
@@ -22,7 +24,6 @@ const Signup = () => {
             const id = jwtDecode(req.data.token).id
 
             console.log(req.data.token);
-            localStorage.removeItem('token');
 
  
             // const user = await api.get(`/user/${id}`, {headers: {Authorization: `bearer ${req.data.token}`}})
@@ -70,7 +71,7 @@ const Signup = () => {
                                     <input type="password" name="confirm" id="confirm" placeholder="Digite sua senha novamente" onChange={(e) => setNewUser({...newUser, confirma_senha: e.target.value}) }/>
                                 </div>
                                 <hr />
-                                <p>Já tem uma conta? <a href="#" className="cor-3" id="link-form">Clique aqui</a></p>
+                                <p>Já tem uma conta? <Link to='/login' className="cor-3" id="link-form">Clique aqui</Link></p>
                                 <button type="submit" value="Submit" form="cadastro">Cadastrar</button>
                             </form>
                         </div>
