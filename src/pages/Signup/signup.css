@@ -46,7 +46,7 @@
 }
  
 .right-box hr {
-    border: 1px solid var(--cor-4);
+    border: 1px solid #632EB5;
     margin-top: 1em;
     width: 100%;
 }
@@ -90,28 +90,110 @@
     text-decoration: underline;
 }
 
+@media  screen and (max-width: 900px) {
+    .right {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .right-box {
+        height: 80%;
+        width: 65%;
+    }
+
+    .right-box-content {
+        margin: auto;
+        width: 80%;
+    }
+
+    #cadastro > hr {
+        width: 100%;
+        border: 1px solid #632EB5;
+        margin-top: 2em;
+    }
+
+    #flogo {
+        width: 9em;
+    }
+
+    #ftitle {
+        margin-top: .7em;
+        font-family: "Days One", sans-serif;
+        font-weight: 100;
+        font-size: 2rem;
+    }
+
+    .right-box p {
+        margin: 2em 0;
+        font-size: 1.7rem;
+    }
+
+    .ent label {
+        font-size: 1.65rem;
+    }
+
+    .ent input {
+        font-size: 1.3rem;
+    }
+
+    .right-box button {
+        padding: 1em;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+}
+
 @media screen and (max-width: 468px) {
     .right {
         height: 100vh;
         width: 100vw;
     }
 
-    #cadastro > hr {
-        width: 100%;
-        border: 1px solid var(--cor-4);
-        margin-top: 1.5em;
+    .right-box {
+        height: 80%;
+        width: 80%;
     }
 
-    .right-box {
-        height: 70%;
+    .right-box-content {
+        margin: 1em;
+        width: 90%;
+    }
+
+    #cadastro > hr {
+        width: 100%;
+        border: 1px solid #632EB5;
+        margin-top: 2em;
+    }
+
+    #flogo {
+        width: 5.5em;
+    }
+
+    #ftitle {
+        margin-top: .7em;
+        font-family: "Days One", sans-serif;
+        font-weight: 100;
+        font-size: 20px;
     }
 
     .right-box p {
         margin: 2em 0;
+        font-size: 20px;
     }
 
-    .right-box-content {
-        margin: auto;
-        width: 90%;
+    .ent label {
+        font-size: 20px;
+    }
+
+    .ent input {
+        font-size: 18px;
+        padding: .50rem;
+    }
+
+    .right-box button {
+        padding: 0.65em;
+        font-size: 16px;
     }
 }
