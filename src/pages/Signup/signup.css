@@ -26,8 +26,14 @@
     padding: 1.25em;
     position: relative;
     z-index: 1;
+    max-width: 35%;
 }
  
+.right-box-content {
+    width: 90%;
+    margin: auto;
+}
+
 .right-box::before {
     content: "";
     position: absolute;
@@ -103,7 +109,7 @@
     .right-box {
         margin-top: 2.5em;
         height: 80%;
-        width: 65%;
+        max-width: 65%;
     }
 
     .right-box-content {
@@ -166,7 +172,7 @@
     .right-box {
         margin-top: .4em;
         height: 80%;
-        width: 80%;
+        max-width: 80%;
     }
 
     .right-box-content {
