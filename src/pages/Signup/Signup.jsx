@@ -1,6 +1,6 @@
 import "./signup.css";
 import api from "../../config/axios"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
