@@ -104,11 +104,3 @@ body {
   font-size: 32px;
 }
 
-/* Estilizações padrões */
-button {
-  border: none;
-  padding: 4px 12px 8px;
-  background: rgb(45,28,68);
-  background: linear-gradient(180deg, rgba(45,28,68,1) 0%, rgba(54,23,98,1) 100%);
-  cursor: pointer;
-}

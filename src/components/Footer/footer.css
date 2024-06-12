@@ -63,4 +63,54 @@
         right: 0px;
         z-index: -1;
     }
+
+    .linktree, .github{
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .linktree p, .github p{
+        display: none;
+    }
+
+    @media screen and (max-width: 468px){
+        .right{
+            display: none;
+        }
+
+        .flex{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flex img{
+            width: 100%;
+            padding: 0;
+            margin: 10px 0px;
+        }
+
+        .txt p, .txt span{
+            max-width: 60vw;
+            font-size: 20px;
+        }
+
+        .linktree, .github{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 70px;
+        }
+
+        .linktree img, .github img{
+            width: 50px;   
+            padding-right: 10px;
+        }
+
+        .linktree p, .github p{
+            display: block;
+            max-width: 0vw;
+            padding-top: 10px;
+            font-size: 18px;
+        }
+    }
 }
