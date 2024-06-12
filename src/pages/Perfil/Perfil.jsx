@@ -7,6 +7,7 @@ import {Link, useNavigate} from "react-router-dom"
 import editicon from "../../img/Icons/Pencil.svg"
 import { jwtDecode } from "jwt-decode"
 
+
 const Perfil = () => {
 
   const navigate = useNavigate()
@@ -19,7 +20,23 @@ const Perfil = () => {
 
   const permitirAtualizar =  ()=> {
     setEditar(!editar)
+    let botao = document.querySelector('.linkEditarPessoais')
+
+    let inp = [...document.querySelectorAll('.inativo')]
+
+
+    inp.map( e => {
+      e.classList.toggle('ativo')
+    })
   }
+
+  // function mudarCLasse() {
+  //   let botao = document.querySelector('.linkEditarPessoais')
+  //   let inp = document.querySelector('.inativo')
+
+  //   inp.classList.toggle('ativo')
+    
+  // }
   
   const [user, setUser] = useState({})
 
@@ -52,24 +69,24 @@ const Perfil = () => {
             <div className="pessoalinfo">
               <div>
                 <p className="fonte-subtitulos">Nome</p>
-                <input value={nome} onChange={(e) => setNome(e.target.value)} className="fonte-gerais" readOnly={editar}>{user.nome}</input>
+                <input value={nome} onChange={(e) => setNome(e.target.value)} className="inativo" readOnly={!editar}>{user.nome}</input>
               </div>
 
               <div className="sobrenomediv">
                 <p className="fonte-subtitulos">Sobrenome</p>
-                <input value={sobrenome} onChange={(e) => setSobrenome(e.target.value)} className="fonte-gerais" readOnly={editar}>{user.sobrenome}</input>
+                <input value={sobrenome} onChange={(e) => setSobrenome(e.target.value)} className="inativo" readOnly={!editar}>{user.sobrenome}</input>
               </div>
             </div>
 
             <div className="pessoalinfo2">
               <div>
                 <p className="fonte-subtitulos">Email</p>
-                <input value={email} onChange={(e) => setEmail(e.target.value)} className="fonte-gerais" readOnly={editar}>{user.email}</input>
+                <input value={email} onChange={(e) => setEmail(e.target.value)} className="inativo" readOnly={!editar}>{user.email}</input>
               </div>
 
               <div className="phonediv">
                 <p className="fonte-subtitulos">Telefone</p>
-                <input value={telefone} onChange={(e) => setTelefone(e.target.value)} className="fonte-gerais" readOnly={editar}>{telefone.nome}</input>
+                <input value={telefone} onChange={(e) => setTelefone(e.target.value)} className="inativo" readOnly={!editar}>{telefone.nome}</input>
               </div>
             </div>
           </div>

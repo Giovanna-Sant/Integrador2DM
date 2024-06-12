@@ -132,21 +132,21 @@ hr{
     margin-top: 2vw;
 }
 
-input {
-    border-top-width: 1px;
-    border-right-width: 1px;
+.ativo{
     border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-top-style: none;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: none;
-    border-right-style: none;
-    border-top-color: #F7F7F7;
-    border-right-color: #59289F;
+    border-bottom-style: solid !important;
     border-bottom-color: #fff;
-    border-left-color: #F7F7F7;
     background-color: transparent;
+    color: #fff;
+}
+
+.inativo{
+    border-style: none;
+    background-color: transparent;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
 }
 
 
@@ -155,6 +155,10 @@ input {
         font-weight: 400;
         font-size: 32px;
         color: #46FF29
+}
+
+.fonte-gerais input{
+    color: #fff;
 }
 
 .editIcon{
