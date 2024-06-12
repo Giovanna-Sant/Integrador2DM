@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Days+One&display=swap');
+/* Header config */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 4vh;
+    padding: 20px 0px;
+    
+    .opcoes {
+        display: flex;
+        gap: 32px;
+        margin: 0px 5.5vw 0px 1vw;
+    }
+    
+    img {
+        max-width: 100px;
+    }
+
+    p {
+        font-family: "Darker Grotesque", sans-serif;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 24px;
+    }
+}
+
+*{
+    padding: 0% ;
+}

@@ -1,0 +1,772 @@
+.divPerfil{
+    border-radius: 25px;
+    background-color: #59289F;
+    color: white;
+    margin-left : 6vh;
+    margin-right: 6vh;
+    padding: 3vh;
+    display: flex;
+    gap: 2vw;
+}
+
+.infoDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info1{
+    border: solid 2px;
+    border-color: white;
+    border-radius: 25px;
+    padding: 3vh 6vw 3vh 2vw;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5vh;
+    max-width: 60vw;
+}
+
+.topinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.linkEditarPessoais{
+    display: flex;
+    gap: 1vw;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 4px 12px 8px;
+    background: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+.pessoalinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 40vw;
+}
+
+.sobrenomediv{
+    width: 10vw;
+}
+
+.pessoalinfo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 40vw;
+}
+
+.phonediv{
+    width: 10vw;
+}
+
+.info2{
+    border: solid 2px;
+    border-color: white;
+    border-radius: 25px;
+    padding: 3vh 6vw 3vh 2vw;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5vh;
+    width: 60vw;
+}
+
+.planoinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 45vw;
+}
+
+.planoinfo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 45vw;
+}
+
+.beneficioslista{
+   margin-left: 2vw;
+}
+
+.end{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20vw;
+}
+
+hr{
+    border: 2px solid #fff;
+    width: 20vw;
+    margin: 20px 0px;
+}
+
+.linkPerfil{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1vw;
+}
+
+.linkDelete{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+    color: #fff;
+    text-decoration: none;
+    margin-left: .4vw;
+    background: transparent
+    }
+
+.perfilFuncoes{
+    margin-top: 2vw;
+}
+
+input {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-color: #F7F7F7;
+    border-right-color: #59289F;
+    border-bottom-color: #fff;
+    border-left-color: #F7F7F7;
+    background-color: transparent;
+}
+
+
+.fonte-plano{
+        font-family: "Days One", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        color: #46FF29
+}
+
+.editIcon{
+    width: 20px;
+    height: 20px;
+    margin-top: 1.6vh;
+}
+
+@media (max-width: 1100px) {
+    .info1{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 25px;
+        padding: 3vh 6vw 3vh 2vw;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 5vh;
+        width: 59vw;
+    }
+
+    .pessoalinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .pessoalinfo2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 40vw;
+    }
+    
+    .phonediv{
+        width: 10vw;
+    }
+    
+    .info2{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 25px;
+        padding: 3vh 6vw 3vh 2vw;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 5vh;
+        width: 59vw;
+    }
+    
+    .planoinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 45vw;
+    }
+
+    .phonediv{
+        width: 13vw;
+    }
+
+    .sobrenomediv{
+        width: 13vw;
+    }
+    
+    .planoinfo2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 45vw;
+    }
+    
+    .beneficioslista{
+       margin-left: 2vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .info1{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 25px;
+        padding: 3vh 6vw 3vh 2vw;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 5vh;
+        width: 58vw;
+    }
+
+    .pessoalinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .pessoalinfo2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 40vw;
+    }
+    
+    .phonediv{
+        /* border: 2px solid white; */
+        width: 10vw;
+    }
+    
+    .info2{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 25px;
+        padding: 3vh 6vw 3vh 2vw;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 5vh;
+        width: 58vw;
+    }
+    
+    .planoinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 45vw;
+    }
+
+    .phonediv{
+        width: 13vw;
+    }
+
+    .sobrenomediv{
+        width: 13vw;
+    }
+    
+    .planoinfo2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 45vw;
+    }
+    
+    .beneficioslista{
+       margin-left: 2vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .info1{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 60vw;
+    }
+
+    .pessoalinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .pessoalinfo2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .phonediv{
+        width: 40vw;
+    }
+
+    .info2{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 60vw;
+    }
+    
+    .planoinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 55vw;
+    }
+    
+    .planoinfo2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 55vw;
+    }
+    
+    .beneficioslista{
+       margin-left: 4vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .info1{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 58vw;
+    }
+
+    .pessoalinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .pessoalinfo2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .phonediv{
+        width: 40vw;
+    }
+
+    .info2{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 58vw;
+    }
+    
+    .planoinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 58vw;
+    }
+    
+    .planoinfo2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 60vw;
+    }
+    
+    .beneficioslista{
+       margin-left: 4vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .info1{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 58vw;
+    }
+
+    .pessoalinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .pessoalinfo2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .phonediv{
+        width: 40vw;
+    }
+
+    .info2{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 58vw;
+    }
+    
+    .planoinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 55vw;
+    }
+    
+    .planoinfo2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 55vw;
+    }
+    
+    .beneficioslista{
+       margin-left: 4vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .info1{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 56vw;
+    }
+
+    .pessoalinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .pessoalinfo2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .phonediv{
+        width: 40vw;
+    }
+
+    .info2{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 56vw;
+    }
+    
+    .planoinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 55vw;
+    }
+    
+    .planoinfo2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 55vw;
+    }
+    
+    .beneficioslista{
+       margin-left: 4vw;
+    }
+}
+
+@media (max-width: 600px){
+    .divPerfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linkPerfil{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .linkDelete{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .perfilIcon{
+        height: 20px;
+        width: 20px;
+    }
+
+    .deleteIcon{
+        height: 25px;
+        width: 20px;
+    }
+
+    .fonte-subtitulos{
+        font-size: 18px;
+    }
+
+    .linkEditarPessoais{
+        display: none;
+    }
+
+    .topinfo{
+        justify-content: center;
+    }
+
+    .fonte-05{
+        font-size: 24px;
+    }
+    
+    .info1{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 60vw;
+    }
+
+    .pessoalinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .sobrenomediv{
+        width:40vw;
+    }
+    
+    .pessoalinfo2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .phonediv{
+        width: 40vw;
+    }
+
+    .editIcon{
+        width: 20px;
+        height: 20px;
+        margin-top: 1.2vh;
+    }
+
+    .fonte-editar{
+        font-family: "Darker Grotesque";
+        font-size: 22px;
+        font-weight: 500
+    }
+
+    .info2{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 60vw;
+        text-align: center;
+    }
+    
+    .planoinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .planoinfo2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .beneficioslista{
+       margin-left: 4vw;
+       list-style: none;
+       text-align: justify;
+    }
+    
+    hr{
+        width: 40vw;
+    }
+}
+
+@media (max-width: 468px){
+    .divPerfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linkPerfil{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .linkDelete{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .perfilIcon{
+        height: 20px;
+        width: 20px;
+    }
+
+    .deleteIcon{
+        height: 25px;
+        width: 20px;
+    }
+
+    .fonte-subtitulos{
+        font-size: 18px;
+    }
+    
+    .info1{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 60vw;
+    }
+
+    .pessoalinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .sobrenomediv{
+        width:40vw;
+    }
+    
+    .pessoalinfo2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 40vw
+    }
+    
+    .phonediv{
+        width: 40vw;
+    }
+
+    .editIcon{
+        width: 20px;
+        height: 20px;
+        margin-top: 1.2vh;
+    }
+
+    .fonte-editar{
+        font-family: "Darker Grotesque";
+        font-size: 22px;
+        font-weight: 500
+    }
+
+    .info2{
+        border: solid 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 2vh 2vw 2vh 2vw;
+        display:flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 60vw;
+    }
+    
+    .beneficioslista{
+       margin-left: 4vw;
+       list-style: none;
+       text-align: justify;
+    }
+    
+    hr{
+        width: 40vw;
+    }
+}
+
+.fonte-06{
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}

@@ -1,0 +1,39 @@
+.planos {
+    display: flex;
+    justify-content: space-between;
+    margin: 8vh 4vh;
+}
+
+.bronze, .prata, .ouro {
+    background-size: cover;
+    padding: 1vh 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+}
+
+.beneficios {
+    margin: 6vh 0px 6vh;
+}
+
+.bronze p, .prata p, .ouro p {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 2vh;
+}
+
+.bronze {
+    background-image: url("../../img/Background/bronze-fundo.png");
+}
+
+.prata {
+    background-image: url("../../img/Background/prata-fundo.png");
+}
+
+.ouro {
+    background-color: #46FF29;
+}
+
