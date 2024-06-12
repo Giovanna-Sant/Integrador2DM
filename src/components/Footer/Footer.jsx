@@ -1,4 +1,6 @@
-import "./footer.css"
+import "./footer.css";
+import github from "../../img/Icons/github.svg";
+import linktree from "../../img/Icons/linktree.svg";
 
 const Footer = () => {
     return (
@@ -17,26 +19,22 @@ const Footer = () => {
                         <p>Acompanhe o desenvolvimento de nosso projeto e <span className="cor-4">siga nossos devs!</span></p>
                     </div>
 
-<<<<<<< HEAD
-                    <a href="https://github.com/Giovanna-Sant/Integrador2DM.git">
-                        <img src="src/img/Icons/github.svg"   className="icon" alt="icon github"/>
-                    </a>
-                    <a>
-                        <img src="src/img/Icons/linktree.svg" className="icon" alt="icon linktree"/>
-                    </a>
-=======
                     <div className="github">
-                        <img src={github}   className="icon" alt="icon github"/>
+                        <a href="https://github.com/Giovanna-Sant/Integrador2DM.git">
+                            <img src={github} className="icon" alt="icon github"/>
+                        </a>
                         <p className="cor-0 fonte-gerais">GitHub</p>
                     </div>
                     
                     <div className="linktree">
-                        <img src={linktree} className="icon" alt="icon linktree"/>
+                        <a>
+                            <img src={linktree} className="icon" alt="icon linktree"/>
+                        </a>
                         <p className="cor-0 fonte-gerais">Linktree</p>
                     </div>
->>>>>>> origin/gabriel
                 </div>
             </div>
+            
             <div className="cor-0 fonte-gerais right">
                 <p>© GymRats 2024, SENAI Suíço</p>
             </div>
