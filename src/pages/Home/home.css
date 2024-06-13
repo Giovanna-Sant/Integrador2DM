@@ -39,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 14vw;
+    width: 16vw;
 }
 
 .beneficios {
@@ -75,13 +75,54 @@
     align-items: flex-end;
     text-align: end;
     position: relative;
-    left: 50%;
-    transform: translate(-50%, -140%);
 }
 
 .confira {
     margin: 8vh 4vw -40vh;
     img {
         max-width: 65vw;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .planos {
+        flex-direction: column;
+    }
+
+    .bronze, .prata, .ouro {
+        width: 72vw;
+    }
+
+    .sobre-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .confira {
+        margin: 4vh 4vw 0vh 4vw;
+
+        img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .bronze, .prata, .ouro {
+        width: vw;
+    }
+
+    .sobre-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .confira {
+        margin: 4vh 4vw 0vh 4vw;
+
+        img {
+            display: none;
+        }
     }
 }
