@@ -1,6 +1,7 @@
-import "./footer.css";
-import github from "../../img/Icons/github.svg";
-import linktree from "../../img/Icons/linktree.svg";
+import './footer.css';
+import logoFooter from "../../img/logoFooter.svg"
+import github from "../../img/Icons/github.svg"
+import linktree from "../../img/Icons/linktree.svg"
 
 const Footer = () => {
     return (
@@ -11,7 +12,7 @@ const Footer = () => {
             </div>
 
             <div className="flex">
-                <img src="src/img/logoFooter.svg" alt="logo footer" id="logo-footer"/>
+                <img src={logoFooter} alt="logo footer" id="logo-footer"/>
 
                 <div>
                     <div className="cor-0 fonte-gerais txt">
@@ -20,21 +21,16 @@ const Footer = () => {
                     </div>
 
                     <div className="github">
-                        <a href="https://github.com/Giovanna-Sant/Integrador2DM.git">
-                            <img src={github} className="icon" alt="icon github"/>
-                        </a>
+                        <img src={github}   className="icon" alt="icon github"/>
                         <p className="cor-0 fonte-gerais">GitHub</p>
                     </div>
                     
                     <div className="linktree">
-                        <a>
-                            <img src={linktree} className="icon" alt="icon linktree"/>
-                        </a>
+                        <img src={linktree} className="icon" alt="icon linktree"/>
                         <p className="cor-0 fonte-gerais">Linktree</p>
                     </div>
                 </div>
             </div>
-            
             <div className="cor-0 fonte-gerais right">
                 <p>© GymRats 2024, SENAI Suíço</p>
             </div>
@@ -43,3 +39,4 @@ const Footer = () => {
 }
 
 export default Footer;
+

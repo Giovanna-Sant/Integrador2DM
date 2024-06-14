@@ -1,7 +1,5 @@
 import './sobre.css'
 import './slider.css'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 import Brands from '../../components/Brands/Brands'
 import Flickity from "react-flickity-component";
 
@@ -9,7 +7,7 @@ const Sobre = () => {
     return (
         <div className='sobre'>
             <div className='img-background-sobre'>
-            <Header/>
+            
             <div className='sobreimg'>
                 <p className="cor-0 fonte-04 sub">NA GYMRATS PRIORIZAMOS</p>
                 <p className="cor-3 fonte-02">A SUA SAÚDE</p>
@@ -125,7 +123,7 @@ const Sobre = () => {
                 </div>
                 <Brands/>
             </div>
-            <Footer/>
+            
         </div>
     )
 }

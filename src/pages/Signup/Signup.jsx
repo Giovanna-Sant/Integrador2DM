@@ -121,7 +121,7 @@ const Signup = () => {
               <hr />
               <p>
                 Já tem uma conta?{" "}
-                <Link to="/login" className="cor-3" id="link-form">
+                <Link to="/" className="cor-3" id="link-form">
                   Clique aqui
                 </Link>
               </p>

@@ -10,17 +10,18 @@ import Pagamento from './pages/Pagamento/Pagamento';
 
 import './index.css';
 import Login from './pages/Login/Login';
-
+  
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-          <Route element={<App/>}/>
-          <Route path='/pagamento' element={<Pagamento/>}/>
-          <Route path='/cadastro' element={<Signup/>}/>
-          <Route path='/' element={<Login />}/>
-          <Route path='/home' element={<Home/>}/>
-          <Route path='/sobre' element={<Sobre/>}/>
+        <Route element={<App/>}>
+            <Route path='/pagamento' element={<Pagamento/>}/>
+            <Route path='/cadastro' element={<Signup/>}/>
+            <Route path='/' element={<Login />}/>
+            <Route path='/home' element={<Home/>}/>
+            <Route path='/sobre' element={<Sobre/>}/>
+          </Route>
       </Routes>
       
     </BrowserRouter>
