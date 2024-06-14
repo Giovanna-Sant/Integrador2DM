@@ -2,7 +2,8 @@
     border-radius: 25px;
     background-color: #59289F;
     color: white;
-    margin : 10vh 6vh;
+    margin-left : 6vh;
+    margin-right: 6vh;
     padding: 3vh;
     display: flex;
     gap: 2vw;
@@ -37,17 +38,21 @@
     gap: 1vw;
     color: #fff;
     text-decoration: none;
+    border: none;
+    padding: 4px 12px 8px;
+    background: transparent;
+    background: transparent;
+    cursor: pointer;
 }
 
 .pessoalinfo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 40vw
+    max-width: 40vw;
 }
 
 .sobrenomediv{
-    /* border: 2px solid white; */
     width: 10vw;
 }
 
@@ -59,7 +64,6 @@
 }
 
 .phonediv{
-    /* border: 2px solid white; */
     width: 10vw;
 }
 
@@ -112,7 +116,20 @@ hr{
     color: #fff;
     text-decoration: none;
     margin-left: 1vw;
+    align-items: center;
 }
+
+.linkLogout{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+    color: #fff;
+    text-decoration: none;
+    /* margin-left: .4vw; */
+    background: transparent;
+    align-items: center;
+    }
+
 
 .linkDelete{
     display: flex;
@@ -120,23 +137,53 @@ hr{
     gap: 1vw;
     color: #fff;
     text-decoration: none;
-    margin-left: 1vw;
-}
+    align-items: center;
+    /* margin-left: .4vw; */
+    background: transparent
+    }
 
 .perfilFuncoes{
     margin-top: 2vw;
 }
 
+.ativo{
+    border-bottom-width: 1px;
+    border-bottom-style: solid !important;
+    border-bottom-color: #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.inativo{
+    border-style: none;
+    background-color: transparent;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+}
+
+
 .fonte-plano{
-        font-family: "Days One", sans-serif;
-        font-weight: 400;
-        font-size: 32px;
-        color: #46FF29
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #46FF29
+}
+
+.fonte-gerais input{
+    color: #fff;
 }
 
 .editIcon{
     width: 20px;
     height: 20px;
+    margin-top: 1.6vh;
+}
+
+.logoutIcon{
+    width: 45px;
+    height: 40px;
     margin-top: 1.6vh;
 }
 
@@ -168,7 +215,6 @@ hr{
     }
     
     .phonediv{
-        /* border: 2px solid white; */
         width: 10vw;
     }
     
