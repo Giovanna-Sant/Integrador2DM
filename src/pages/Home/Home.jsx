@@ -66,7 +66,6 @@ const Home = () => {
                 </div>
             </div>
         </div>
-
         <Brands/>
         <div className="confira">
             <img src="src\img\Background\sobre.jpg" alt="Homem em posição de agachamento com rosto pintado prestes a levantar peso"></img>
