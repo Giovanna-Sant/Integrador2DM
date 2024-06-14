@@ -116,7 +116,20 @@ hr{
     color: #fff;
     text-decoration: none;
     margin-left: 1vw;
+    align-items: center;
 }
+
+.linkLogout{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+    color: #fff;
+    text-decoration: none;
+    /* margin-left: .4vw; */
+    background: transparent;
+    align-items: center;
+    }
+
 
 .linkDelete{
     display: flex;
@@ -124,7 +137,8 @@ hr{
     gap: 1vw;
     color: #fff;
     text-decoration: none;
-    margin-left: .4vw;
+    align-items: center;
+    /* margin-left: .4vw; */
     background: transparent
     }
 
@@ -151,10 +165,10 @@ hr{
 
 
 .fonte-plano{
-        font-family: "Days One", sans-serif;
-        font-weight: 400;
-        font-size: 32px;
-        color: #46FF29
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #46FF29
 }
 
 .fonte-gerais input{
@@ -164,6 +178,12 @@ hr{
 .editIcon{
     width: 20px;
     height: 20px;
+    margin-top: 1.6vh;
+}
+
+.logoutIcon{
+    width: 45px;
+    height: 40px;
     margin-top: 1.6vh;
 }
 

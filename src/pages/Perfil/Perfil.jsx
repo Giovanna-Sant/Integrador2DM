@@ -5,6 +5,7 @@ import perfil from "../../img/Icons/perfil.svg"
 import deleteicon from "../../img/Icons/TrashCan.png"
 import {Link, useNavigate} from "react-router-dom"
 import editicon from "../../img/Icons/Pencil.svg"
+import logoutIcon from "../../img/Icons/logout.png"
 import { jwtDecode } from "jwt-decode"
 
 
@@ -18,7 +19,7 @@ const Perfil = () => {
   const [telefone, setTelefone] = useState("")
   const [editar, setEditar] = useState(false)
 
-  const permitirAtualizar =  ()=> {
+  const permitirAtualizar = () => {
     setEditar(!editar)
     let botao = document.querySelector('.linkEditarPessoais')
 
@@ -28,6 +29,19 @@ const Perfil = () => {
     inp.map( e => {
       e.classList.toggle('ativo')
     })
+  }
+
+  const deletePerfil = async () => {
+    if(confirm("Deseja realmente deletar sua conta?")){
+      axios.delete('')
+        .then(function(response){
+          alert('Conta deletada com sucesso')
+          window.location.href = '/'
+        })
+        .catch(function(error){
+          alert('Erro ao deletar conta')
+        })
+    }
   }
 
   // function mudarCLasse() {
@@ -47,12 +61,17 @@ const Perfil = () => {
           <Link className="linkPerfil" to="/">
             <img className="perfilIcon" src={perfil}/>
             <p className="fonte-subtitulos">Conta</p>
-         </Link>
-        <hr />
-        <button onClick{...() => deletePerfil(user._id)} className="linkDelete">
-            <img className="deleteIcon" src={deleteicon}/>
-            <p className="fonte-subtitulos">Deletar Conta</p>
-        </button>
+          </Link>
+          <hr />
+          <button onClick={deletePerfil} className="linkDelete">
+              <img className="deleteIcon" src={deleteicon}/>
+              <p className="fonte-subtitulos">Deletar Conta</p>
+          </button>
+          <hr />
+          <button className="linkLogout">  
+              <img className="logoutIcon" src={logoutIcon}/>
+              <p className="fonte-subtitulos">Logout</p>
+          </button>
         </div>
         <div className="infoDiv">
 
@@ -86,7 +105,7 @@ const Perfil = () => {
 
               <div className="phonediv">
                 <p className="fonte-subtitulos">Telefone</p>
-                <input value={telefone} onChange={(e) => setTelefone(e.target.value)} className="inativo" readOnly={!editar}>{telefone.nome}</input>
+                <input value={telefone} onChange={(e) => setTelefone(e.target.value)} className="inativo" readOnly={!editar}>{user.telefone}</input>
               </div>
             </div>
           </div>
