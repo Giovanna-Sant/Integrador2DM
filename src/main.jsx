@@ -7,7 +7,7 @@ import Home from "./pages/Home/Home";
 import Sobre from "./pages/Sobre/Sobre";
 import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
-
+import Perfil from "./pages/Perfil/Perfil";
 import Pagamento from "./pages/Pagamento/Pagamento";
 
 import "./index.css";
@@ -21,6 +21,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <AuthenticatedContextProvider>
         <Routes>
           <Route element={<App />}>
+          <Route
+            path="/perfil"
+            element={
+              <Logado>
+                <Perfil />
+              </Logado>
+            }
+          />
             <Route
               path="/pagamento"
               element={
