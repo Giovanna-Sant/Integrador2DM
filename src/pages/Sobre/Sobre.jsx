@@ -1,13 +1,15 @@
 import './sobre.css'
 import './slider.css'
+
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/scrollbar'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { register } from 'swiper/element/bundle'
 import { useState, useEffect } from 'react'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
+// import Header from '../../components/Header/Header'
+// import Footer from '../../components/Footer/Footer'
+
 import Brands from '../../components/Brands/Brands'
 
 register();
@@ -31,7 +33,7 @@ const Sobre = () => {
     return (
         <div className='sobre'>
             <div className='img-background-sobre'>
-            <Header/>
+            
             <div className='sobreimg'>
                 <p className="cor-0 fonte-04 sub">NA GYMRATS PRIORIZAMOS</p>
                 <p className="cor-3 fonte-02">A SUA SAÚDE</p>
@@ -212,7 +214,7 @@ const Sobre = () => {
                 </div>
                 <Brands/>
             </div>
-            <Footer/>
+            
         </div>
     )
 }

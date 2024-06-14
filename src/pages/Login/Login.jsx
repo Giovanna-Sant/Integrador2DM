@@ -1,6 +1,7 @@
-import "./login.css";
+import "./sigup_login.css";
 import api from "../../config/axios"
-import { useState, useEffect } from "react"
+import { useState, useContext } from "react"
+import { AuthenticatedContext } from "../../Context/AuthenticatedContext";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode"
@@ -9,8 +10,9 @@ import Header from '../../components/Header/Header'
 
 const Login = () => {
     const [validar, setValidar] = useState({email: '', senha: ''})
-
     const navigate = useNavigate()
+    const { setAuthenticated } = useContext(AuthenticatedContext);
+
     const handleSubmit = async  (e) => {
         e.preventDefault();
 
@@ -23,12 +25,14 @@ const Login = () => {
         localStorage.setItem('tokennz', req.data.token)
         localStorage.setItem('id', id)
 
-        navigate('/');
+        navigate('/home');
+        setAuthenticated(true);
     }
+    
     return(
         <div className="all">
             <Art/>
-            <div className="right">
+            <div className="rightt">
                 <div className="cab">
                     <Header/>
                 </div>
@@ -48,7 +52,7 @@ const Login = () => {
                             </div>
                             <hr />
                         <p>Ainda não tem uma conta? <Link to='/cadastro' className="cor-3" id="link-form">Clique aqui</Link></p>
-                        <button type="submit" value="Submit" form="cadastro" >Entrar</button>
+                        <button type="submit" value="Submit" form="cadastro" className="cadastro_buttonn">Entrar</button>
                         </form>
                     </div>
                 </div>

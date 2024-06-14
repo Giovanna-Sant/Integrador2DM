@@ -1,14 +1,14 @@
 import "./home.css"
 import { Link } from "react-router-dom"
-import Header from "../../components/Header/Header"
 import Brands from "../../components/Brands/Brands"
+import Header from "../../components/Header/Header"
 import Footer from "../../components/Footer/Footer"
 
 const Home = () => {
     return (
         <div className="home">
             <div className="img-background-home">
-                <Header/>
+                <Header />
                 <div className="info">
                 <p className="cor-0 fonte-gerais">Conheça nossos planos!</p>
                 <p className="cor-3 fonte-03">ASSINATURAS</p>
@@ -80,7 +80,7 @@ const Home = () => {
                 </Link>
             </div>
         </div>
-        <Footer/>
+        <Footer />
     </div>
     )
 }

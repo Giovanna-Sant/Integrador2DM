@@ -1,116 +1,122 @@
-.footer {
-    padding: 20px 0px;
-    background-color: #1e1e1e;
-    margin: 0px;
+footer {
+  padding: 20px 0px;
+  background-color: #1e1e1e;
+  margin: 0px;
 
-    p {
-        max-width: 28vw;
-        margin-bottom: 10px;
-    }
+  p {
+    max-width: 28vw;
+    margin-bottom: 10px;
+  }
 
-    #logo-footer {
-        max-width: 220px;
-        margin-right: 30px;
-    }
+  #logo-footer {
+    max-width: 220px;
+    margin-right: 30px;
+  }
 
-    .verde {
-        color: #46FF29;
-    }
-    
-    .roxo {
-        color: #A916FF;
-    }
+  .verde {
+    color: #46ff29;
+  }
 
+  .roxo {
+    color: #a916ff;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #line-roxa {
+    display: block;
+    background-color: #59289f;
+    width: 160px;
+    height: 10px;
+    margin-bottom: 8px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 6% 100%);
+  }
+
+  #line-verde {
+    display: block;
+    background-color: #46ff29;
+    width: 100px;
+    height: 10px;
+  }
+
+  .flex {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .right p {
+    margin-right: 40px;
+    z-index: 1;
+  }
+
+  .right p::before {
+    content: "";
+    position: absolute;
+    background-color: #59289f;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 6% 100%);
+    width: 260px;
+    height: 10px;
+    right: 0px;
+    z-index: -1;
+  }
+
+  .linktree,
+  .github {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .linktree p,
+  .github p {
+    display: none;
+  }
+
+  @media screen and (max-width: 468px) {
     .right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+      display: none;
     }
-    
-    #line-roxa {
-        display: block;
-        background-color: #59289F;
-        width: 160px;
-        height: 10px;
-        margin-bottom: 8px;
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 6% 100%)
-    }
-    
-    #line-verde {
-        display: block;
-        background-color: #46FF29;
-        width: 100px;
-        height: 10px;
-    }
-    
+
     .flex {
-        display: flex;
-        margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .right p {
-        margin-right: 40px;
-        z-index: 1;
-    }
-    
-    .right p::before{
-        content: "";
-        position: absolute;
-        background-color: #59289F;
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 6% 100%);
-        width: 260px;
-        height: 10px;
-        right: 0px;
-        z-index: -1;
+    .flex img {
+      width: 100%;
+      padding: 0;
+      margin: 10px 0px;
     }
 
-    .linktree, .github{
-        display: inline;
-        margin-right: 10px;
+    .txt p,
+    .txt span {
+      max-width: 60vw;
+      font-size: 20px;
     }
 
-    .linktree p, .github p{
-        display: none;
+    .linktree,
+    .github {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 70px;
     }
 
-    @media screen and (max-width: 468px){
-        .right{
-            display: none;
-        }
-
-        .flex{
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .flex img{
-            width: 100%;
-            padding: 0;
-            margin: 10px 0px;
-        }
-
-        .txt p, .txt span{
-            max-width: 60vw;
-            font-size: 20px;
-        }
-
-        .linktree, .github{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 70px;
-        }
-
-        .linktree img, .github img{
-            width: 50px;   
-            padding-right: 10px;
-        }
-
-        .linktree p, .github p{
-            display: block;
-            max-width: 0vw;
-            padding-top: 10px;
-            font-size: 18px;
-        }
+    .linktree img,
+    .github img {
+      width: 50px;
+      padding-right: 10px;
     }
+
+    .linktree p,
+    .github p {
+      display: block;
+      max-width: 0vw;
+      padding-top: 10px;
+      font-size: 18px;
+    }
+  }
 }
