@@ -74,10 +74,10 @@ const Sobre = () => {
                         <p className='fonte-gerais'><strong>Tech Lead</strong></p>
                         <p className='cor-0 fonte-gerais'>Além de exercer o cargo de Tech Lead geral, Cauã também faz parte da equipe de  <span className='cor-3'>desenvolvedores front-end</span>. Possui 19 anos e grande afinidade com tecnologias como JavaScript.</p>
                         <span>
-                            <a href="https://github.com/CauaSilvaChz" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/cau%C3%A3-abreu-431373263/" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\Linkedin.svg" alt='Icon do Linkedin' width="28px"></img>
                             </a>
                         </span>
@@ -89,10 +89,10 @@ const Sobre = () => {
                         <p className='fonte-gerais'><strong>Tech Lead</strong></p>
                         <p className='cor-0 fonte-gerais'>Exerce o cargo de <span className='cor-3'>Tech Lead</span> geral, porém também liderou a equipe de Front-End. Desenvolveu a essência do <span className='cor-3'>UX/UI Design</span>, possuindo grande afinidade com a área de front.</p>
                         <span>
-                            <a href="https://github.com/Giovanna-Sant/" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/giovanna-santos-s/"  target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/"  target="_blank">
                             <img src="src\img\Icons\Linkedin.svg" alt='Icon do Linkedin' width="28px"></img>
                             </a>
                         </span>
@@ -104,25 +104,10 @@ const Sobre = () => {
                         <p className='fonte-gerais'><strong>Dev Ops</strong></p>
                         <p className='cor-0 fonte-gerais'>Sendo extremamente empenhado durando o projeto, exerceu o cargo de Dev Ops, tendo objetivo <span className='cor-3'>integrar todas as partes</span> e torná-las funcionais, contribuindo em todas as áreas.</p>
                         <span>
-                            <a href="https://github.com/gabrieldosanjosdbz"  target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/"  target="_blank">
                             <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/gabriel-dos-anjos-915553281/"  target="_blank">
-                            <img src="src\img\Icons\Linkedin.svg" alt='Icon do Linkedin' width="28px"></img>
-                            </a>
-                        </span>
-                    </SwiperSlide>
-
-                    <SwiperSlide className='dev-ind'>
-                        <img src="src\img\Devs\iconErica.png" alt="Imagem de perfil - Erica"/>
-                        <p className='cor-0 fonte-gerais'>Erica Lelis</p>
-                        <p className='fonte-gerais'><strong>DataBase Lead</strong></p>
-                        <p className='cor-0 fonte-gerais'>Sendo líder de <span className='cor-3'>Banco de Dados</span> e fazendo parte da equipe de Back-End, Érica exerceu uma postura de liderança, sendo extremamento prestativa e desenvolta.</p>
-                        <span>
-                            <a href="https://github.com/zarquells" target="_blank">
-                            <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"/>
-                            </a>
-                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/"  target="_blank">
                             <img src="src\img\Icons\Linkedin.svg" alt='Icon do Linkedin' width="28px"></img>
                             </a>
                         </span>
@@ -134,10 +119,10 @@ const Sobre = () => {
                         <p className='fonte-gerais'><strong>DataBase Dev</strong></p>
                         <p className='cor-0 fonte-gerais'>Trabalhando na área de <span className='cor-3'>Banco de Dados</span> e Back-End geral, Julia fez uma ótima contribuição para a realização do projeto, assumindo uma postura prestativa e organizada.</p>
                         <span>
-                            <a href="https://github.com/wickedju" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/julia-freitas-de-almeida-851462157/" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\Linkedin.svg" alt='Icon do Linkedin' width="28px"></img>
                             </a>
                         </span>
@@ -149,10 +134,10 @@ const Sobre = () => {
                         <p className='fonte-gerais'><strong>Front-End Dev</strong></p>
                         <p className='cor-0 fonte-gerais'>Atuou como desenvolvedor Front-End, se dedicando na responsividade das páginas. Tem 19 anos, possui uma boa relação com tecnologias de front, como JavaScript.</p>
                         <span>
-                            <a href="https://github.com/leoguims" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/leonardo-santos-guimar%C3%A3es-228937293/" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\Linkedin.svg" alt='Icon do Linkedin' width="28px"></img>
                             </a>
                         </span>
@@ -164,10 +149,10 @@ const Sobre = () => {
                         <p className='fonte-gerais'><strong>Back-End Dev</strong></p>
                         <p className='cor-0 fonte-gerais'>Lívia integra um ótimo papel na equipe de Back-End, sendo produtiva e proativa. Tem experiências <span className='cor-3'>diversas com tecnologia</span>, e possui boa relação com C.</p>
                         <span>
-                            <a href="https://github.com/liviaBELLO/" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/livia-bello-da-guarda-ferreira-635936260/" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\Linkedin.svg" alt='Icon do Linkedin' width="28px"></img>
                             </a>
                         </span>
@@ -179,10 +164,10 @@ const Sobre = () => {
                         <p className='fonte-gerais'><strong>Back-End Lead</strong></p>
                         <p className='cor-0 fonte-gerais'>Sendo um dos principais desenvolvedores <span className='cor-3'>Back-End</span>, João é extremamente dedicado e esforçado, sendo uma peça essencial neste projeto. Afinidade com C# e Java.</p>
                         <span>
-                            <a href="https://github.com/sntpwbl" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/jpcota/" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\Linkedin.svg" alt='Icon do Linkedin' width="28px"></img>
                             </a>
                         </span>
@@ -194,10 +179,10 @@ const Sobre = () => {
                         <p className='fonte-gerais'><strong>Front-End Dev</strong></p>
                         <p className='cor-0 fonte-gerais'>Trabalhou na área de <span className='cor-3'>desenvolvimento Web</span>, trabalha em algumas páginas e suas devidas funcionalidades, como responsividade, etc. Gosta de FrostByte e sapos. 🐸</p>
                         <span>
-                            <a href="https://github.com/yockayz" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\github.svg" alt='Icon do GitHub' width="28px"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/martins-erick/" target="_blank">
+                            <a href="https://www.linkedin.com/in/%C3%A9rica-lelis-de-jesus/" target="_blank">
                             <img src="src\img\Icons\Linkedin.svg" alt='Icon do Linkedin' width="28px"></img>
                             </a>
                         </span>

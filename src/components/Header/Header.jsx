@@ -17,7 +17,7 @@ const Header = () => {
                 </Link>
             </div>
             
-            <Link to='/perfil'>
+            <Link to=''>
                 <img src="src\img\Icons\perfil.svg" alt="perfil" className="icon"/>
             </Link>
         </div>
