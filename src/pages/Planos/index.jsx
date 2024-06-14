@@ -1,5 +1,5 @@
 import './style.css'
-import '../../App.css'
+import '../../App.cs'
 import ContainerTitle from './components/ContainerTitle';
 import PlanosDisponiveis from './components/PlanosDisponiveis';
 
