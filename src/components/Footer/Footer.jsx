@@ -1,4 +1,6 @@
-import './footer.css';
+
+import "./footer.css"   
+
 import logoFooter from "../../img/logoFooter.svg"
 import github from "../../img/Icons/github.svg"
 import linktree from "../../img/Icons/linktree.svg"

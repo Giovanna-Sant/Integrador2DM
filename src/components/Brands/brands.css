@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 6vh;
+    text-align: center
 }
 
 
@@ -16,4 +17,23 @@
         max-height: 40px;
         margin: 10px 20px
     }   
+}
+
+@media (max-width: 500px) {
+    .marcas {
+        img {
+            max-height: 10px;
+            margin: 5px
+        }   
+    }
+}
+
+@media (max-width: 800px) {
+    .marcas {
+        margin: 0px 8px;
+        img {
+            max-height: 26px;
+            margin: 7px 10px
+        }   
+    }
 }

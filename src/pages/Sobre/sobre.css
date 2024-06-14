@@ -57,9 +57,13 @@
     z-index: -1;
 }
 
+.active {
+	scroll-snap-type: unset;
+}
+
 .devs {
     display: flex;
-    margin: 4vh 0vw
+    margin: 4vh 0vw;
 }
 
 .dev-ind {
@@ -78,4 +82,11 @@
         border-radius: 50%;
         margin: 2vh;
     }
+
+    span img{
+        border-radius: 0%;
+    }
 }
+
+/* Slider */
+

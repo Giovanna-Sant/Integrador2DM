@@ -1,11 +1,11 @@
-import "./signup.css";
+import '../Login/sigup_login.css'
 import api from "../../config/axios";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import Art from "../../components/Art/Art";
-import Header from "../../components/Header/Header";
+import { AuthenticatedContext } from '../../Context/AuthenticatedContext';
 
 const Signup = () => {
   const [newUser, setNewUser] = useState({
@@ -16,6 +16,7 @@ const Signup = () => {
     confirma_senha: "",
   });
   const navigate = useNavigate();
+  const { setAuthenticated } = useContext(AuthenticatedContext);
 
   const postNewUser = async (e) => {
     try {
@@ -32,14 +33,14 @@ const Signup = () => {
         senha: newUser.senha,
       });
       const id = jwtDecode(req.data.token).id;
-
+      setAuthenticated(true);       
       console.log(req.data.token);
 
       // const user = await api.get(`/user/${id}`, {headers: {Authorization: `bearer ${req.data.token}`}})
       localStorage.setItem("tokennz", req.data.token);
       localStorage.setItem("id", id);
 
-      navigate("/");
+      navigate("/home");
       // console.log(req.data.token)
     } catch (error) {
       alert(error.message);
@@ -49,10 +50,9 @@ const Signup = () => {
   return (
     <div className="all">
       <Art />
-      <div className="right">
+      <div className="rightt">
         <div className="right-box">
           <div className="cab">
-            <Header />
           </div>
           <div className="right-box-content">
             <img src="src\img\Logo.svg" alt="Logo da GymRats" id="flogo" />
@@ -125,7 +125,7 @@ const Signup = () => {
                   Clique aqui
                 </Link>
               </p>
-              <button className="botao" type="submit" value="Submit" form="cadastro">
+              <button className="cadastro_buttonn" type="submit" value="Submit" form="cadastro">
                 Cadastrar
               </button>
             </form>
