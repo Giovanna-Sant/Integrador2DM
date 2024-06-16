@@ -5,7 +5,7 @@ const Logado = ({ children }) => {
     
     const user = localStorage.getItem('authenticated')
 
-    return user ? children : <Navigate to='/' />
+    return user ? children : <Navigate to='/login' />
 }
 
 export default Logado;

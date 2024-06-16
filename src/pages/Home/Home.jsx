@@ -5,6 +5,7 @@ import Brands from "../../components/Brands/Brands"
 import Footer from "../../components/Footer/Footer"
 
 const Home = () => {
+
     return (
         <div className="home">
             <div className="img-background-home">
