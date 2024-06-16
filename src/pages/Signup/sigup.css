@@ -1,0 +1,220 @@
+.all {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cad-right{
+    background-image: linear-gradient(180deg, #2C1650, #190B30, #030105);
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1.2px 0 1.5px lightslategray;
+}
+ 
+.cad-right-box {
+    background-image: linear-gradient(360deg, #632EB5, #10071F);
+    font-family: "Darker Grotesque", sans-serif;
+    color: white;
+    border: 1px solid #9B9B9B;
+    border-radius: 10px;
+    padding: 1.25em;
+    position: relative;
+    z-index: 1;
+    max-width: 35%;
+}
+ 
+.cad-right-box-content {
+    width: 90%;
+    margin: auto;
+}
+
+.cad-right-box::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/Background/bg-form.png");
+    border-radius: 10px;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+ 
+.cad-right-box p {
+    text-align: center;
+    margin: 1em 0;
+}
+ 
+.cad-right-box hr {
+    border: 1px solid #632EB5;
+    margin-top: 1em;
+    width: 100%;
+}
+ 
+#cad-flogo {
+    width: 5em;
+}
+ 
+#cad-ftitle {
+    text-transform: capitalize;
+    margin-bottom: .5em;
+    font-size: 24px;
+}
+ 
+.cad-ent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .33em;
+}
+ 
+.cad-ent label {
+    font-size: 18px;
+}
+ 
+.cad-ent input {
+    padding: .65em;
+}
+ 
+.cad-button {
+    background: #632EB5;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    padding: .7em;
+}
+ 
+#cad-link-form {
+    text-decoration: none;
+}
+ 
+#cad-link-form:hover {
+    text-decoration: underline;
+}
+
+.cad-cab {
+    display: none;
+}
+
+@media  screen and (max-width: 900px) {
+    .cad-right {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .cad-right-box {
+        margin-top: 2.5em;
+        height: 80%;
+        max-width: 65%;
+    }
+
+    .cad-right-box-content {
+        margin: auto;
+        width: 80%;
+    }
+
+    #cad-cadastro > hr {
+        width: 100%;
+        border: 1px solid #632EB5;
+        margin-top: 2em;
+    }
+
+    #cad-flogo {
+        width: 9em;
+    }
+
+    #cad-ftitle {
+        margin-top: .7em;
+        font-family: "Days One", sans-serif;
+        font-weight: 100;
+        font-size: 2rem;
+    }
+
+    .cad-right-box p {
+        margin: 2em 0;
+        font-size: 1.7rem;
+    }
+
+    .cad-ent label {
+        font-size: 1.65rem;
+    }
+
+    .cad-ent input {
+        font-size: 1.3rem;
+    }
+
+    .cad-right-box button {
+        padding: 1em;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    .cad-cab {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .cad-right {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .cad-right-box {
+        margin-top: .4em;
+        height: 80%;
+        max-width: 80%;
+    }
+
+    .cad-right-box-content {
+        margin: 1em;
+        width: 90%;
+    }
+
+    #cad-cadastro > hr {
+        width: 100%;
+        border: 1px solid #632EB5;
+        margin-top: 2em;
+    }
+
+    #cad-flogo {
+        width: 5.5em;
+    }
+
+    #cad-ftitle {
+        margin-top: .7em;
+        font-family: "Days One", sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+    .cad-right-box p {
+        margin: 2em 0;
+        font-size: 20px;
+    }
+
+    .cad-ent label {
+        font-size: 20px;
+    }
+
+    .cad-ent input {
+        font-size: 18px;
+        padding: .50rem;
+    }
+
+    .cad-right-box button {
+        padding: 0.65em;
+        font-size: 16px;
+    }
+
+    .cad-cab {
+        display: none;
+    }
+}
