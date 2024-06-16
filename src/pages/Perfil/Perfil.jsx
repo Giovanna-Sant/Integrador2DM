@@ -5,7 +5,7 @@ import perfil from "../../img/Icons/perfil.svg"
 import deleteicon from "../../img/Icons/TrashCan.png"
 import {Link, useNavigate} from "react-router-dom"
 import editicon from "../../img/Icons/Pencil.svg"
-import logoutIcon from "../../img/Icons/logout.png"
+// import logoutIcon from "../../img/Icons/logout.png"
 import { jwtDecode } from "jwt-decode"
 
 
@@ -69,7 +69,7 @@ const Perfil = () => {
           </button>
           <hr />
           <button className="linkLogout">  
-              <img className="logoutIcon" src={logoutIcon}/>
+              {/* <img className="logoutIcon" src={logoutIcon}/> */}
               <p className="fonte-subtitulos">Logout</p>
           </button>
         </div>
