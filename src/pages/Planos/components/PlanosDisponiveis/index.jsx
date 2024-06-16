@@ -78,9 +78,9 @@ export default function PlanosDisponiveis(){
                 </div>
                 <div className='containerBtn'>
                     <div className='botoesPlanos'>
-                        <Link className='btnAssinar cor-7 fonte-03 link btnBronze' to='/pagamento'>assinar</Link>
-                        <Link className='btnAssinar cor-7 fonte-03 link btnPrata' to='/pagamento'>assinar</Link>
-                        <Link className='btnAssinar cor-7 fonte-03 link btnOuro' to='/pagamento'>assinar</Link>
+                        <Link className='btnAssinar cor-7 fonte-03 link' to='/pagamento' onClick={setBronze}>assinar</Link>
+                        <Link className='btnAssinar cor-7 fonte-03 link' to='/pagamento' onClick={setPrata}>assinar</Link>
+                        <Link className='btnAssinar cor-7 fonte-03 link' to='/pagamento' onClick={setOuro}>assinar</Link>
                     </div>
                 </div>
             </div>
