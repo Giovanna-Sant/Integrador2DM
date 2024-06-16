@@ -1,14 +1,14 @@
 import "./home.css"
 import { Link } from "react-router-dom"
-import Brands from "../../components/Brands/Brands"
 import Header from "../../components/Header/Header"
+import Brands from "../../components/Brands/Brands"
 import Footer from "../../components/Footer/Footer"
 
 const Home = () => {
     return (
         <div className="home">
             <div className="img-background-home">
-                <Header />
+                <Header/>
                 <div className="info">
                 <p className="cor-0 fonte-gerais">Conheça nossos planos!</p>
                 <p className="cor-3 fonte-03">ASSINATURAS</p>
@@ -16,7 +16,7 @@ const Home = () => {
 
                 <p className="cor-0 fonte-gerais txt">Nosso compromisso é com você e <span className="cor-3">seu bem-estar</span>. O GymRats pode <span className="cor-3">transformar sua rotina</span> de exercícios em uma experiência mais rica e diversificada.</p>
                 <Link to='/planos'>
-                <button className="cor-0 fonte-gerais">Seja membro</button>
+                <button className="cor-0 fonte-gerais btn-home">Seja membro</button>
                 </Link>
                 </div>
             </div>
@@ -33,7 +33,7 @@ const Home = () => {
                         <p>Acesso a 1 modalidade escolhida</p>
                     </div>
 
-                    <button className="cor-0 fonte-gerais">Assinar</button>
+                    <button className="cor-0 fonte-gerais btn-home">Assinar</button>
                 </div>
 
                 <div className="cor-7 ouro">
@@ -48,7 +48,7 @@ const Home = () => {
                         <p>Acesso a todas as modalidades</p>
                     </div>
 
-                    <button className="cor-0 fonte-gerais">Assinar</button>
+                    <button className="cor-0 fonte-gerais btn-home">Assinar</button>
                 </div>
 
                 <div className="cor-0 prata">
@@ -62,7 +62,7 @@ const Home = () => {
                         <p>Acesso a 2 modalidades escolhidas</p>
                     </div>
 
-                    <button className="cor-0 fonte-gerais">Assinar</button>
+                    <button className="cor-0 fonte-gerais btn-home">Assinar</button>
                 </div>
             </div>
         </div>
@@ -76,11 +76,11 @@ const Home = () => {
 
                 <p className="cor-0 fonte-gerais txt">Nossa missão é ser uma companhia de assinatura de planos referência em <span className="cor-3">acessibilidade</span>. Para isso, contamos com uma equipe <span className="cor-3">diversa</span>. Confira!</p>
                 <Link to='/sobre'>
-                <button className="cor-0 fonte-gerais">Sobre nós</button>
+                <button className="cor-0 fonte-gerais btn-home">Sobre nós</button>
                 </Link>
             </div>
         </div>
-        <Footer />
+        <Footer/>
     </div>
     )
 }
