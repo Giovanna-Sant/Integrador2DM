@@ -41,18 +41,18 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           />
    
             <Route
-              path="/perfil"
-              element={
-                <Logado>
-                  <Perfil />
-                </Logado>
-              }
-            />
-            <Route
               path="/pagamento"
               element={
                 <Logado>
                   <Pagamento />
+                </Logado>
+              }
+            />
+            <Route
+              path="/perfil/:id"
+              element={
+                <Logado>
+                  <Perfil />
                 </Logado>
               }
             />
