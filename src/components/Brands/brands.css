@@ -22,7 +22,16 @@
 @media (max-width: 500px) {
     .marcas {
         img {
-            max-height: 10px;
+            max-height: 5px;
+            margin: 2px
+        }   
+    }
+}
+
+@media (max-width: 600px) {
+    .marcas {
+        img {
+            max-height: 12px;
             margin: 5px
         }   
     }
@@ -32,7 +41,7 @@
     .marcas {
         margin: 0px 8px;
         img {
-            max-height: 26px;
+            max-height: 16px;
             margin: 7px 10px
         }   
     }
