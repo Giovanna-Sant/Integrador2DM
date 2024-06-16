@@ -38,31 +38,6 @@ const Perfil = () => {
     handleGetRequest()
   }, [])
 
-  const permitirAtualizar = () => {
-    setEditar(!editar)
-    let botao = document.querySelector('.linkEditarPessoais')
-
-    let inp = [...document.querySelectorAll('.inativo')]
-
-
-    inp.map( e => {
-      e.classList.toggle('ativo')
-    })
-  }
-
-  const deletePerfil = async () => {
-    if(confirm("Deseja realmente deletar sua conta?")){
-      axios.delete('')
-        .then(function(response){
-          alert('Conta deletada com sucesso')
-          window.location.href = '/'
-        })
-        .catch(function(error){
-          alert('Erro ao deletar conta')
-        })
-    }
-  }
-
   return (
     <div className="Perfil">
       <div className="divPerfil">
