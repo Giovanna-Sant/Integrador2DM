@@ -14,6 +14,8 @@ import "./index.css";
 
 import Logado from "./pages/Login/Logado";
 import { AuthenticatedContextProvider } from "./Context/AuthenticatedContext";
+import Planos from "./pages/Planos";
+import Perfil from "./pages/Perfil/Perfil";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -28,7 +30,25 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                   <Pagamento />
                 </Logado>
               }
-            />
+          />
+
+          <Route
+            path="/planos"
+            element={
+              <Logado>
+                <Planos />
+              </Logado>
+            }
+          />
+
+          <Route
+            path="/perfil"
+            element={
+              <Logado>
+                <Perfil />
+              </Logado>
+            }
+          />
           </Route>
 
           <Route

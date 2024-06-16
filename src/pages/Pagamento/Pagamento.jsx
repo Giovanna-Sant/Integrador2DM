@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import './Pagamento.css';
+import { PlanoSelecionado } from '../Planos/components/PlanosDisponiveis';
 
 const Pagamento = () => {
   const [opcaoSelecionada, setOpcaoSelecionada] = useState('');
@@ -7,13 +8,17 @@ const Pagamento = () => {
   // Função para lidar com a seleção
   const handleSelecao = (opcao) => {
     setOpcaoSelecionada(opcao);
-  };
+  };    
+
+  const {plano, valor } = useContext(PlanoSelecionado);
+
+  console.log(useContext(PlanoSelecionado))
 
   return (
     <div className='container_pagamento'>
         <h1 className='fonte-04 title_pagamento'>FORMA DE <br /> <span className='cor-3'>PAGAMENTO</span></h1>
 
-        <main className='container_main_pagamento'>
+        <section className='container_main_pagamento'>
             <div className='container container_1 fonte-gerais cor-0'>
                 <p>Olá, <span className='cor-3'>Usuário!</span></p>
                 <p>Proin sagittis nisl rhoncus mattis. Ut tristique et estas quis ipsum.</p>
@@ -21,7 +26,7 @@ const Pagamento = () => {
 
             <div className='container container_2'>
                 <h2 className='fonte-04 title_opcao'>Selecione uma opção de <span className='cor-3'>pagamento:</span></h2>
-                <div className='botoes'>
+                <div className='botoess'>
                     <button className={opcaoSelecionada === "pix" ? "selected buttonPagamento pix" : "buttonPagamento pix" } onClick={() => handleSelecao("pix")}>
                     Pix
                     </button>
@@ -51,8 +56,8 @@ const Pagamento = () => {
                         <p>Valor</p>
                     </div>
                     <div>
-                        <p className='plano'>PRATA</p>
-                        <p className='plano'>R$79,90</p>
+                        <p className='plano'>{plano}</p>
+                        <p className='plano'>{valor}</p>
                     </div>
                 </div>
 
@@ -69,7 +74,7 @@ const Pagamento = () => {
                 <button className='.fonte-gerais'>FINALIZAR COMPRA</button>
             </div>
 
-        </main>
+        </section>
     </div>
   )
 }
