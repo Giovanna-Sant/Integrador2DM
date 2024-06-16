@@ -2,6 +2,7 @@ import "./header.css"
 import { Link } from 'react-router-dom'
 
 const Header = () => {
+    const id = localStorage.getItem('id')
     return (
         <div className="header">
             <Link to='/home'>
@@ -17,7 +18,7 @@ const Header = () => {
                 </Link>
             </div>
             
-            <Link to=''>
+            <Link to={`/perfil/${id}`}>
                 <img src="src\img\Icons\perfil.svg" alt="perfil" className="icon"/>
             </Link>
         </div>

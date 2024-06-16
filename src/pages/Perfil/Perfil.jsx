@@ -1,23 +1,42 @@
-import "./perfil.css"
 import { useState, useEffect } from "react"
 import api from '../../config/axios'
+import "./perfil.css"
+import {Link, useNavigate, useParams} from "react-router-dom"
+
 import perfil from "../../img/Icons/perfil.svg"
 import deleteicon from "../../img/Icons/TrashCan.png"
-import {Link, useNavigate} from "react-router-dom"
 import editicon from "../../img/Icons/Pencil.svg"
-import logoutIcon from "../../img/Icons/logout.png"
+import logoutIcon from "../../img/Icons/logout.svg"
 import { jwtDecode } from "jwt-decode"
 
 
 const Perfil = () => {
 
-  const navigate = useNavigate()
+  const {nome, setNome} = ('')
+  const {sobrenome, setSobrenome} = ('')
+  const {telefone, setTelefone} = ('')
+  const {email, setEmail} = ('')
 
-  const [nome, setNome] = useState("")
-  const [sobrenome, setSobrenome] = useState("")
-  const [email, setEmail] = useState("")
-  const [telefone, setTelefone] = useState("")
   const [editar, setEditar] = useState(false)
+  const navigate = useNavigate()
+  const {id} = useParams()
+ 
+  const [user, setUser] = useState({})
+ 
+  const token = localStorage.getItem('tokennz')
+ 
+  const handleGetRequest = async() =>{
+    if(!token) navigate('/')
+    else {
+      navigate(`/user/${id}`)
+      const getUser = await api.get(`/user/${id}`, {headers: {authorization: `bearer ${token}`}})
+      setUser(getUser.data)
+    }
+  }
+ 
+  useEffect(()=>{
+    handleGetRequest()
+  }, [])
 
   const permitirAtualizar = () => {
     setEditar(!editar)
@@ -43,16 +62,6 @@ const Perfil = () => {
         })
     }
   }
-
-  // function mudarCLasse() {
-  //   let botao = document.querySelector('.linkEditarPessoais')
-  //   let inp = document.querySelector('.inativo')
-
-  //   inp.classList.toggle('ativo')
-    
-  // }
-  
-  const [user, setUser] = useState({})
 
   return (
     <div className="Perfil">
@@ -111,37 +120,41 @@ const Perfil = () => {
           </div>
 
           <div className="info2">
-            <div className="topinfo">
-              <p className="fonte-06">Seu Plano</p>
-
-              <button className="linkEditarPessoais">  
-                <img className="editIcon" src={editicon}/>
-                <p className="fonte-subtitulos">Editar</p>
-              </button>
-            </div>
-
-            <div className="planoinfo">
-              <div>
-              <p className="fonte-05">Plano Atual</p>
-              <p className="fonte-plano">Bronze</p>
-              </div>
-
-              <div className="divValor">
-              <p className="fonte-05">Valor</p>
-              <p className="fonte-05">R$55,90</p>
-              </div>
-            </div>
-
+          {user.plano ? (
             <div>
+              <div className="topinfo">
+                <p className="fonte-06">Seu Plano</p>
+ 
+                <Link className="linkEditarPessoais">  
+                  <img className="editIcon" src={PencilImg}/>
+                  <p className="fonte-subtitulos">Editar</p>
+                </Link>
+              </div>
+ 
+              <div className="planoinfo">
+                <div>
+                <p className="fonte-05">Plano Atual</p>
+                <p className="fonte-plano">Bronze</p>
+                </div>
+ 
+                <div className="divValor">
+                <p className="fonte-05">Valor</p>
+                <p className="fonte-05">R$55,90</p>
+                </div>
+              </div>
+ 
               <div>
-                <p className="fonte-subtitulos">Benefícios</p>
-                <ul className="beneficioslista">
-                  <li className="fonte-gerais">Acesso a mais de 20 redes de academia</li>
-                  <li className="fonte-gerais">Avaliação física semestral</li>
-                  <li className="fonte-gerais">Acesso a uma modalidade escolhida</li>
-                </ul>
+                <div>
+                  <p className="fonte-subtitulos">Benefícios</p>
+                  <ul className="beneficioslista">
+                    <li className="fonte-gerais">Acesso a mais de 20 redes de academia</li>
+                    <li className="fonte-gerais">Avaliação física semestral</li>
+                    <li className="fonte-gerais">Acesso a uma modalidade escolhida</li>
+                  </ul>
+                </div>
               </div>
             </div>
+          ) : <p className="fonte-subtitulos">Você ainda não possui um plano. <Link to='/plano'>Assine agora.</Link></p>}
           </div>
         </div>
       </div>
