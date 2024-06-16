@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Pagamento.css';
+import {PlanoSelecionado} from '../Planos/components/PlanosDisponiveis'
 
 const Pagamento = () => {
   const [opcaoSelecionada, setOpcaoSelecionada] = useState('');
@@ -51,8 +52,8 @@ const Pagamento = () => {
                         <p>Valor</p>
                     </div>
                     <div>
-                        <p className='plano'>PRATA</p>
-                        <p className='plano'>R$79,90</p>
+                        <p className='plano'>{PlanoSelecionado.plano}</p>
+                        <p className='plano'>{PlanoSelecionado.valor}</p>
                     </div>
                 </div>
 
