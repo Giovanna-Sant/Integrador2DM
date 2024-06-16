@@ -10,11 +10,11 @@ import Login from "./pages/Login/Login";
 import Perfil from "./pages/Perfil/Perfil";
 import Pagamento from "./pages/Pagamento/Pagamento";
 import Planos from "./pages/Planos";
-
+import Logado from "./pages/Login/Logado";
 import "./index.css";
 
-import Logado from "./pages/Login/Logado";
 import { AuthenticatedContextProvider } from "./Context/AuthenticatedContext";
+import Logado2 from "./pages/Login/Logado2";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -39,7 +39,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               </Logado>
             }
           />
-   
             <Route
               path="/pagamento"
               element={
@@ -74,8 +73,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               </Logado>
             }
           />
-          <Route path="/cadastro" element={<Signup />} />
-          <Route exact path="/" element={<Login />} />
+
+          <Route exact path="/" element={ <Logado2 /> } />
+          <Route path="/cadastro" element={ <Logado2> <Signup /> </Logado2>} />
+          <Route exact path="/login" element={  <Logado2> <Login /> </Logado2> } />
         </Routes>
       </AuthenticatedContextProvider>
      

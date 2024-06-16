@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import {  useState } from 'react';
 import './Pagamento.css';
-import {PlanoSelecionado} from '../Planos/components/PlanosDisponiveis'
+import { PlanoSelecionado } from '../Planos/components/PlanosDisponiveis';
 
 const Pagamento = () => {
   const [opcaoSelecionada, setOpcaoSelecionada] = useState('');
@@ -14,7 +14,7 @@ const Pagamento = () => {
     <div className='container_pagamento'>
         <h1 className='fonte-04 title_pagamento'>FORMA DE <br /> <span className='cor-3'>PAGAMENTO</span></h1>
 
-        <main className='container_main_pagamento'>
+        <section className='container_main_pagamento'>
             <div className='container container_1 fonte-gerais cor-0'>
                 <p>Olá, <span className='cor-3'>Usuário!</span></p>
                 <p>Proin sagittis nisl rhoncus mattis. Ut tristique et estas quis ipsum.</p>
@@ -22,7 +22,7 @@ const Pagamento = () => {
 
             <div className='container container_2'>
                 <h2 className='fonte-04 title_opcao'>Selecione uma opção de <span className='cor-3'>pagamento:</span></h2>
-                <div className='botoes'>
+                <div className='botoess'>
                     <button className={opcaoSelecionada === "pix" ? "selected buttonPagamento pix" : "buttonPagamento pix" } onClick={() => handleSelecao("pix")}>
                     Pix
                     </button>
@@ -70,7 +70,7 @@ const Pagamento = () => {
                 <button className='.fonte-gerais'>FINALIZAR COMPRA</button>
             </div>
 
-        </main>
+        </section>
     </div>
   )
 }

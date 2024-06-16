@@ -12,10 +12,12 @@ export const PlanoSelecionado = createContext({
 })
 
 export default function PlanosDisponiveis(){
+
     function setBronze(){
         PlanoSelecionado.plano='bronze';
         PlanoSelecionado.valor='55,90';
     }
+
     function setPrata(){
         PlanoSelecionado.plano='prata';
         PlanoSelecionado.valor='79,90'
