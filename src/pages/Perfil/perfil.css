@@ -748,3 +748,12 @@ hr{
     font-weight: 400;
     font-size: 32px;
 }
+.link-planos{
+    text-decoration: none;
+    color: #46FF29;
+}
+
+.logout-img{
+    width: 38px;
+    height: 38px;
+}

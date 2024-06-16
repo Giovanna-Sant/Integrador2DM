@@ -1,11 +1,15 @@
 import "./header.css"
 import { Link } from 'react-router-dom'
 
+import logo from '../../img/Logo.svg'
+import icon from '../../img/Icons/perfil.svg'
+
 const Header = () => {
+    const id = localStorage.getItem('id')
     return (
         <div className="header">
             <Link to='/home'>
-                <img src="src\img\Logo.svg" alt="logo"/>
+                <img src={logo} alt="logo"/>
             </Link>
 
             <div className="opcoes">
@@ -17,8 +21,8 @@ const Header = () => {
                 </Link>
             </div>
             
-            <Link to='/perfil'>
-                <img src="src\img\Icons\perfil.svg" alt="perfil" className="icon"/>
+            <Link to={`/perfil/${id}`}>
+                <img src={icon} alt="perfil" className="icon"/>
             </Link>
         </div>
     )
