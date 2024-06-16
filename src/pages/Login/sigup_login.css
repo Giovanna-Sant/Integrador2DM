@@ -1,9 +1,9 @@
-.all {
+.login-all {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.rightt {
+.login-right {
   background-image: linear-gradient(180deg, #2c1650, #190b30, #030105);
   height: 100vh;
   width: 50vw;
@@ -13,7 +13,7 @@
   box-shadow: -1.2px 0 1.5px lightslategray;
 }
 
-.right-box {
+.login-right-box {
   background-image: linear-gradient(360deg, #632eb5, #10071f);
   font-family: "Darker Grotesque", sans-serif;
   color: white;
@@ -22,10 +22,10 @@
   padding: 1.5em;
   position: relative;
   z-index: 1;
-  width: 50%;
+  max-width: 40%;
 }
 
-.right-box::before {
+.login-right-box::before {
   content: "";
   position: absolute;
   background-image: url("../../img/Background/bg-form.png");
@@ -37,131 +37,133 @@
   z-index: -1;
 }
 
-#solcred {
+#login-solcred {
   font-size: 19px;
   text-align: left;
   display: flex;
   margin-top: -0.3em;
 }
 
-.right-box-content > h2 > #bracao > img {
+.login-right-box-content > h2 > #bracao > img {
   width: 1.2em;
   margin-left: 0.3em;
 }
 
-.right-box p {
+.login-right-box p {
   font-size: 18px;
   text-align: center;
   margin: 1em 0;
 }
 
-.right-box hr {
-  border-color: var(--cor-4);
+.login-right-box hr {
+  border-color: #632EB5;
   margin-top: 1em;
+  width: 100%;
 }
 
-#flogo {
+#login-flogo {
   width: 5em;
 }
 
-#ftitle {
+#login-ftitle {
   text-transform: capitalize;
   margin-bottom: 0.5em;
   font-size: 24px;
   margin-right: 1em;
 }
 
-#bracao {
+#login-bracao {
   display: flex;
   align-items: center;
 }
 
-.ent {
+.login-ent {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.33em;
 }
 
-.ent label {
+.login-ent label {
   font-size: 18px;
 }
 
-.ent input {
+.login-ent input {
   padding: 0.65em;
 }
 
-.right-box button {
+.login-button {
   background: var(--cor-5);
   color: white;
   border-radius: 5px;
   width: 100%;
+  padding: 1em;
 }
 
-#link-form {
+#login-link-form {
   text-decoration: none;
 }
 
-#link-form:hover {
+#login-link-form:hover {
   text-decoration: underline;
 }
 
-.cab {
+.login-cab {
   display: none;
 }
 
 @media screen and (max-width: 900px) {
-  .right {
+  .login-right {
     height: 100vh;
     width: 100vw;
   }
 
-  .right-box {
+  .login-right-box {
     margin-top: 2.5em;
     height: 70%;
-    width: 65%;
+    max-width: 65%;
   }
 
-  .right-box-content {
+  .login-right-box-content {
     margin: auto;
     width: 80%;
     max-height: 50%;
   }
 
-  #cadastro > hr {
+  #login-cadastro > hr {
     width: 100%;
     border: 1px solid #632eb5;
     margin-top: 2em;
   }
 
-  #solcred {
+  #login-solcred {
     font-size: 1.7em;
   }
 
-  #flogo {
+  #login-flogo {
     width: 9em;
   }
 
-  #ftitle {
+  #login-ftitle {
     margin-top: 0.7em;
     font-family: "Days One", sans-serif;
     font-weight: 100;
     font-size: 2rem;
   }
 
-  .right-box p {
+  .login-right-box p {
     margin: 2em 0;
     font-size: 1.7rem;
   }
 
-  .ent label {
+  .login-ent label {
     font-size: 1.65rem;
   }
 
-  .ent input {
+  .login-ent input {
     font-size: 1.3rem;
   }
 
-  .right-box button {
+  .login-button {
     padding: 1em;
     font-size: 18px;
     font-weight: 700;
@@ -169,11 +171,8 @@
     letter-spacing: 1.5px;
   }
 
-  .cab {
-    display: block;
-    position: fixed;
-    inset: -2em;
-    top: 0.3em;
+  .login-cab {
+    display: none;
   }
 }
 
@@ -182,62 +181,59 @@
 }
 
 @media screen and (max-width: 468px) {
-  .right {
+  .login-right {
     height: 100vh;
     width: 100vw;
   }
 
-  .right-box {
+  .login-right-box {
     margin-top: 0.4em;
-    height: 75%;
-    width: 90%;
+    height: 80%;
+    max-width: 80%;
   }
 
-  .right-box-content {
+  .login-right-box-content {
     margin: auto;
     width: 95%;
   }
 
-  #cadastro > hr {
+  #login-cadastro > hr {
     width: 100%;
     border: 1px solid #632eb5;
     margin-top: 2em;
   }
 
-  #flogo {
+  #login-flogo {
     width: 5.5em;
   }
 
-  #ftitle {
+  #login-ftitle {
     margin-top: 0.7em;
     font-family: "Days One", sans-serif;
     font-weight: 100;
     font-size: 20px;
   }
 
-  .right-box p {
+  .login-right-box p {
     margin: 2em 0;
+    font-size: 19px;
+  }
+
+  .login-ent label {
     font-size: 20px;
   }
 
-  .ent label {
-    font-size: 20px;
-  }
-
-  .ent input {
+  .login-ent input {
     font-size: 18px;
     padding: 0.5rem;
   }
 
-  .right-box button {
+  .login-button {
     padding: 0.65em;
     font-size: 16px;
   }
 
-  .cab {
-    display: block;
-    position: fixed;
-    inset: -1.6em;
-    top: -0.5em;
+  .login-cab {
+    display: none;
   }
 }

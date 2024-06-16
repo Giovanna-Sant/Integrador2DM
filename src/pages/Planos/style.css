@@ -181,7 +181,10 @@ main{
 
 @media(max-width: 600px){
     .planosContainer{
-        width: 90vw;
+        width: 100%;
+    }
+    .fixMargin{
+        font-size: 60px;
     }
 }
 

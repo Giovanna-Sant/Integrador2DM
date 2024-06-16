@@ -1,10 +1,11 @@
-import '../Login/sigup_login.css'
+import '../Signup/sigup.css'
 import api from "../../config/axios";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import Art from "../../components/Art/Art";
+import Header from '../../components/Header/Header'
 import { AuthenticatedContext } from '../../Context/AuthenticatedContext';
 
 const Signup = () => {
@@ -50,15 +51,18 @@ const Signup = () => {
   return (
     <div className="all">
       <Art />
-      <div className="rightt">
-        <div className="right-box">
-          <div className="cab">
+      <div className="cad-right">
+        <div className="cad-cab">
+          <Header/>
+        </div>
+        <div className="cad-right-box">
+          <div className="cad-cab">
           </div>
-          <div className="right-box-content">
-            <img src="src\img\Logo.svg" alt="Logo da GymRats" id="flogo" />
-            <h2 id="ftitle">Crie sua conta agora mesmo</h2>
+          <div className="cad-right-box-content">
+            <img src="src\img\Logo.svg" alt="Logo da GymRats" id="cad-flogo" />
+            <h2 id="cad-ftitle">Crie sua conta agora mesmo</h2>
             <form method="post" onSubmit={(e) => postNewUser(e)} id="cadastro">
-              <div className="ent">
+              <div className="cad-ent">
                 <label htmlFor="nome">Nome</label>
                 <input
                   type="text"
@@ -70,7 +74,7 @@ const Signup = () => {
                   }
                 />
               </div>
-              <div className="ent">
+              <div className="cad-ent">
                 <label htmlFor="sobrenome">Sobrenome</label>
                 <input
                   type="text"
@@ -82,7 +86,7 @@ const Signup = () => {
                   }
                 />
               </div>
-              <div className="ent">
+              <div className="cad-ent">
                 <label htmlFor="email">Email</label>
                 <input
                   type="email"
@@ -94,7 +98,7 @@ const Signup = () => {
                   }
                 />
               </div>
-              <div className="ent">
+              <div className="cad-ent">
                 <label htmlFor="senha">Senha</label>
                 <input
                   type="password"
@@ -106,7 +110,7 @@ const Signup = () => {
                   }
                 />
               </div>
-              <div className="ent">
+              <div className="cad-ent">
                 <label htmlFor="confirm">Confirme a senha</label>
                 <input
                   type="password"
@@ -121,11 +125,11 @@ const Signup = () => {
               <hr />
               <p>
                 Já tem uma conta?{" "}
-                <Link to="/" className="cor-3" id="link-form">
+                <Link to="/" className="cor-3" id="cad-link-form">
                   Clique aqui
                 </Link>
               </p>
-              <button className="cadastro_buttonn" type="submit" value="Submit" form="cadastro">
+              <button className="cad-button" type="submit" value="Submit" form="cadastro">
                 Cadastrar
               </button>
             </form>
