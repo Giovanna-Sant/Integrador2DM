@@ -12,23 +12,18 @@ export const PlanoSelecionado = createContext({
 })
 
 export default function PlanosDisponiveis(){
-
-    let btnBronze = document.querySelector('.btnBronze')
-    let btnPrata = document.querySelector('.btnPrata')
-    let btnOuro = document.querySelector('.btnOuro')
-
-    btnBronze.addEventListener('click', () => {
+    function setBronze(){
         PlanoSelecionado.plano='bronze';
-        PlanoSelecionado.valor='55,90'
-    })
-    btnPrata.addEventListener('click', () => {
+        PlanoSelecionado.valor='55,90';
+    }
+    function setPrata(){
         PlanoSelecionado.plano='prata';
         PlanoSelecionado.valor='79,90'
-    })
-    btnOuro.addEventListener('click', () => {
+    }
+    function setOuro(){
         PlanoSelecionado.plano='ouro';
         PlanoSelecionado.valor='120,90'
-    })
+    }
 
     return(
         <>
@@ -82,7 +77,7 @@ export default function PlanosDisponiveis(){
                     </div>
                 </div>
                 <div className='containerBtn'>
-                    <div className='botoes'>
+                    <div className='botoesPlanos'>
                         <Link className='btnAssinar cor-7 fonte-03 link btnBronze' to='/pagamento'>assinar</Link>
                         <Link className='btnAssinar cor-7 fonte-03 link btnPrata' to='/pagamento'>assinar</Link>
                         <Link className='btnAssinar cor-7 fonte-03 link btnOuro' to='/pagamento'>assinar</Link>
