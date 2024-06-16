@@ -93,7 +93,7 @@ main{
     font-size: 20px;
 }
 
-.botoes{
+.botoesPlanos{
     display: flex;
     justify-content: space-between;
     width: 47%;
@@ -103,7 +103,7 @@ main{
     .titlePlan{
         font-size: 20px;
     }
-    .botoes{
+    .botoesPlanos{
         width: 50%;
     }
 }
@@ -173,7 +173,7 @@ main{
         font-size: 18px;
     }
 
-    .botoes{
+    .botoesPlanos{
         width: 100%;
     }
 
