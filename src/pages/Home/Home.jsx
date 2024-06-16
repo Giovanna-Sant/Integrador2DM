@@ -33,7 +33,9 @@ const Home = () => {
                         <p>Acesso a 1 modalidade escolhida</p>
                     </div>
 
-                    <button className="cor-0 fonte-gerais btn-home">Assinar</button>
+                    <Link to='/planos'>
+                        <button className="cor-0 fonte-gerais btn-home">Assinar</button>
+                    </Link>
                 </div>
 
                 <div className="cor-7 ouro">
@@ -48,7 +50,9 @@ const Home = () => {
                         <p>Acesso a todas as modalidades</p>
                     </div>
 
-                    <button className="cor-0 fonte-gerais btn-home">Assinar</button>
+                    <Link to='/planos'>
+                        <button className="cor-0 fonte-gerais btn-home">Assinar</button>
+                    </Link>
                 </div>
 
                 <div className="cor-0 prata">
@@ -62,7 +66,9 @@ const Home = () => {
                         <p>Acesso a 2 modalidades escolhidas</p>
                     </div>
 
-                    <button className="cor-0 fonte-gerais btn-home">Assinar</button>
+                    <Link to='/planos'>
+                        <button className="cor-0 fonte-gerais btn-home">Assinar</button>
+                    </Link>
                 </div>
             </div>
         </div>

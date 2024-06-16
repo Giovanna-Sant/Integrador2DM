@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import {  useState } from 'react';
 import './Pagamento.css';
 import { PlanoSelecionado } from '../Planos/components/PlanosDisponiveis';
 
@@ -8,11 +8,7 @@ const Pagamento = () => {
   // Função para lidar com a seleção
   const handleSelecao = (opcao) => {
     setOpcaoSelecionada(opcao);
-  };    
-
-  const {plano, valor } = useContext(PlanoSelecionado);
-
-  console.log(useContext(PlanoSelecionado))
+  };
 
   return (
     <div className='container_pagamento'>
@@ -56,8 +52,8 @@ const Pagamento = () => {
                         <p>Valor</p>
                     </div>
                     <div>
-                        <p className='plano'>{plano}</p>
-                        <p className='plano'>{valor}</p>
+                        <p className='plano'>{PlanoSelecionado.plano}</p>
+                        <p className='plano'>{PlanoSelecionado.valor}</p>
                     </div>
                 </div>
 

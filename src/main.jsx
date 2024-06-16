@@ -7,15 +7,13 @@ import Home from "./pages/Home/Home";
 import Sobre from "./pages/Sobre/Sobre";
 import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
-
+import Perfil from "./pages/Perfil/Perfil";
 import Pagamento from "./pages/Pagamento/Pagamento";
-
+import Planos from "./pages/Planos";
+import Logado from "./pages/Login/Logado";
 import "./index.css";
 
-import Logado from "./pages/Login/Logado";
 import { AuthenticatedContextProvider } from "./Context/AuthenticatedContext";
-import Planos from "./pages/Planos";
-import Perfil from "./pages/Perfil/Perfil";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

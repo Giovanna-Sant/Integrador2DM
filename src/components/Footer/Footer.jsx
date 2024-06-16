@@ -23,8 +23,10 @@ const Footer = () => {
                     </div>
 
                     <div className="github">
-                        <img src={github}   className="icon" alt="icon github"/>
-                        <p className="cor-0 fonte-gerais">GitHub</p>
+                        <a href="https://github.com/Giovanna-Sant/Integrador2DM">
+                            <img src={github}   className="icon" alt="icon github"/>
+                            <p className="cor-0 fonte-gerais">GitHub</p>
+                        </a>
                     </div>
                     
                     <div className="linktree">
