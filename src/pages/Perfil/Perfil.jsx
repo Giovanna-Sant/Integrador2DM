@@ -1,5 +1,12 @@
-import "./perfil.css"
-import {Link} from "react-router-dom"
+import "./perfil.css";
+import { useState, useEffect } from "react";
+import api from '../../config/axios';
+import perfil from "../../img/Icons/perfil.svg";
+import deleteicon from "../../img/Icons/TrashCan.png";
+import { Link } from "react-router-dom";
+import editicon from "../../img/Icons/Pencil.svg";
+import logoutIcon from "../../img/Icons/logout.png";
+import { jwtDecode } from "jwt-decode";
 
 const Perfil = () => {
   return (
@@ -7,14 +14,19 @@ const Perfil = () => {
       <div className="divPerfil">
         <div className="perfilFuncoes">
           <Link className="linkPerfil" to="/">
-            <img className="perfilIcon" src="src/img/Icons/perfil.svg"/>
+            <img className="perfilIcon" src="src/img/Icons/perfil.svg" alt="Perfil Icon" />
             <p className="fonte-subtitulos">Conta</p>
-         </Link>
-        <hr/>
-        <Link className="linkDelete" to="/">
-            <img className="deleteIcon" src="src/img/Icons/TrashCan.png"/>
+          </Link>
+          <hr />
+          <button className="linkDelete">
+            <img className="deleteIcon" src={deleteicon} alt="Delete Icon" />
             <p className="fonte-subtitulos">Deletar Conta</p>
-        </Link>
+          </button>
+          <hr />
+          <button className="linkLogout">
+            <img className="logoutIcon" src={logoutIcon} alt="Logout Icon" />
+            <p className="fonte-subtitulos">Logout</p>
+          </button>
         </div>
         <div className="infoDiv">
 
@@ -23,7 +35,7 @@ const Perfil = () => {
               <p className="fonte-05">Informações Pessoais</p>
 
               <Link className="linkEditarPessoais">  
-                <img className="editIcon" src="src/img/Icons/Pencil.svg"/>
+                <img className="editIcon" src="src/img/Icons/Pencil.svg" alt="Edit Icon" />
                 <p className="fonte-subtitulos">Editar</p>
               </Link>
             </div>
@@ -58,7 +70,7 @@ const Perfil = () => {
               <p className="fonte-06">Seu Plano</p>
 
               <Link className="linkEditarPessoais">  
-                <img className="editIcon" src="src//img/Icons/Pencil.svg"/>
+                <img className="editIcon" src="src//img/Icons/Pencil.svg" alt="Edit Icon" />
                 <p className="fonte-subtitulos">Editar</p>
               </Link>
             </div>
