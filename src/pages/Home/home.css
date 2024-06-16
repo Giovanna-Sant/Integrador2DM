@@ -84,12 +84,6 @@
     }
 }
 
-.btn-home {
-    background: rgb(45,28,68);
-    background: linear-gradient(180deg, rgba(45,28,68,1) 35%, rgba(54,23,98,1) 100%);
-    border: 0;
-    padding: 5px 10px;
-}
 
 @media (max-width: 500px) {
     .planos {
@@ -116,7 +110,7 @@
 
 @media (max-width: 900px) {
     .bronze, .prata, .ouro {
-        max-width: 72vw;
+        width: vw;
     }
 
     .sobre-info {
@@ -130,12 +124,5 @@
         img {
             display: none;
         }
-    }
-}
-
-@media (min-width: 920px) {
-    .sobre-info {
-    left: 50%;
-    transform: translate(-50%, -140%);
     }
 }
