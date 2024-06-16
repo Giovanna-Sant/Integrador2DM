@@ -9,6 +9,7 @@ import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
 import Perfil from "./pages/Perfil/Perfil";
 import Pagamento from "./pages/Pagamento/Pagamento";
+import Planos from "./pages/Planos";
 
 import "./index.css";
 
