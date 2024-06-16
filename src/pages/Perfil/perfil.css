@@ -757,3 +757,16 @@ hr{
     width: 38px;
     height: 38px;
 }
+
+.btnLogout{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 1vw;
+}

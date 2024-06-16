@@ -33,6 +33,15 @@ const Perfil = () => {
       setUser(getUser.data)
     }
   }
+
+  const logOutUser = () => {
+    const desejaSair = confirm('Você realmente deseja sair?')
+    if (desejaSair){
+      localStorage.clear()
+      alert('Saindo...')
+      navigate('/')
+    }
+  }
  
   useEffect(()=>{
     handleGetRequest()
@@ -52,10 +61,10 @@ const Perfil = () => {
               <p className="fonte-subtitulos">Deletar Conta</p>
           </Link>
           <hr/>
-          <Link className="linkDelete" to="/">
+          <button className="btnLogout" onClick={logOutUser}>
               <img className="logout-img" src={Logout}/>
               <p className="fonte-subtitulos">Sair</p>
-          </Link>
+          </button>
         </div>
         <div className="infoDiv">
 

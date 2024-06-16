@@ -25,24 +25,23 @@ const Signup = () => {
 
       if (newUser.senha != newUser.confirma_senha)
         throw new Error("Senhas não coincidem.");
-      await api.post("/auth/cadastrar", newUser);
+        await api.post("/auth/cadastrar", newUser);
 
-      alert("Pessoa cadastrada com sucesso.");
+        alert("Pessoa cadastrada com sucesso.");
 
-      const req = await api.post("/auth/login", {
-        email: newUser.email,
-        senha: newUser.senha,
-      });
+        const req = await api.post("/auth/login", {
+          email: newUser.email,
+          senha: newUser.senha,
+        });
       const id = jwtDecode(req.data.token).id;
       setAuthenticated(true);       
       console.log(req.data.token);
 
-      // const user = await api.get(`/user/${id}`, {headers: {Authorization: `bearer ${req.data.token}`}})
       localStorage.setItem("tokennz", req.data.token);
       localStorage.setItem("id", id);
 
       navigate("/home");
-      // console.log(req.data.token)
+      
     } catch (error) {
       alert(error.message);
     }
