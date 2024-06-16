@@ -208,7 +208,13 @@ const Sobre = () => {
                 <h1 className='cor-0 fonte-05'>ONDE ESTAMOS?</h1>
                 <p className='cor-0 fonte-gerais'>Apesar de estarmos presentes online de forma mundial, precisamos de algum lugar para situar como nossa origem, e foi, no <span className='cor-3'>SENAI Suíço-Brasileira</span> Paulo Ernesto Tolle que nasceu a GymRats, no distrito de Santo Amaro, dentro da grande São Paulo. Através da orientação de professores experientes e do incentivo de colegas e funcionários da escola, construímos e concluímos este projeto integrador.</p>
 
-                <img src="src/img/Local.PNG" alt="Print do Google Maps da area situada"/>
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.7800693663753!2d-46.72431072370251!3d-23.64804606478453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce510e8d3746ed%3A0x3e9f3a76e1ebfb69!2sEscola%20Senai%20Su%C3%AD%C3%A7o-Brasileira%20Paulo%20Ernesto%20Tolle!5e0!3m2!1spt-BR!2sbr!4v1718389901678!5m2!1spt-BR!2sbr" 
+                style={{ width: "100%", height: "300px", border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade">
+                </iframe>
                 </div>
                 <Brands/>
             </div>
