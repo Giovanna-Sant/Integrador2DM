@@ -22,6 +22,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Routes>
           <Route element={<App />}>
             <Route
+              path="/perfil"
+              element={
+                <Logado>
+                  <Perfil />
+                </Logado>
+              }
+            />
+            <Route
               path="/pagamento"
               element={
                 <Logado>
