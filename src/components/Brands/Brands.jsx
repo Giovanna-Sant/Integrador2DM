@@ -1,9 +1,9 @@
 import './brands.css'
 
-import growth from "src/img/Marcas/growth.png"
-import nike from "src/img/Marcas/nike.png"
+import growth   from "src/img/Marcas/growth.png"
+import nike     from "src/img/Marcas/nike.png"
 import smartfit from "src/img/Marcas/smartfit.png"
-import insider from "src/img/Marcas/insider.png"
+import insider  from "src/img/Marcas/insider.png"
 
 const Brands = () => {
     return (
@@ -19,8 +19,8 @@ const Brands = () => {
                 <a href="https://www.smartfit.com.br/" target="_blank">
                 <img src={smartfit} alt="logo SmartFit" />
                 </a>
-                <a href={insider} target="_blank">
-                <img src=  alt="logo Insider" />
+                <a href="https://www.insiderstore.com/" target="_blank">
+                <img src={insider}  alt="logo Insider" />
                 </a>
             </div>
         </div>
