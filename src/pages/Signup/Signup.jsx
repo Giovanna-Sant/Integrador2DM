@@ -8,6 +8,8 @@ import Art from "../../components/Art/Art";
 import Header from '../../components/Header/Header'
 import { AuthenticatedContext } from '../../Context/AuthenticatedContext';
 
+import logo from "src/img/Logo.svg"
+
 const Signup = () => {
   const [newUser, setNewUser] = useState({
     nome: "",
@@ -58,7 +60,7 @@ const Signup = () => {
           <div className="cad-cab">
           </div>
           <div className="cad-right-box-content">
-            <img src="src\img\Logo.svg" alt="Logo da GymRats" id="cad-flogo" />
+            <img src={logo} alt="Logo da GymRats" id="cad-flogo" />
             <h2 id="cad-ftitle">Crie sua conta agora mesmo</h2>
             <form method="post" onSubmit={(e) => postNewUser(e)} id="cadastro">
               <div className="cad-ent">
