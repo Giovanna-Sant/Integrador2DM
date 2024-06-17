@@ -11,17 +11,16 @@ import Loading  from "../../components/Loading/Loading"
 
 const Perfil = () => {
 
-  // const {nome, setNome} = ('')
-  // const {sobrenome, setSobrenome} = ('')
-  // const {telefone, setTelefone} = ('')
-  // const {email, setEmail} = ('')
+  const [user, setUser] = useState({nome: '', sobrenome: '', telefone: ''})
 
-  // const [editar, setEditar] = useState(false)
+  const [userNome, setNome] = useState('')
+  const [sobrenome, setSobrenome] = useState('')
+  const [telefone, setTelefone] = useState('')
+
+  const [editar, setEditar] = useState(false)
   const [isLoading, setLoading] = useState(true)
   const navigate = useNavigate()
   const {id} = useParams()
- 
-  const [user, setUser] = useState({})
  
   const token = localStorage.getItem('tokennz')
  
@@ -33,6 +32,10 @@ const Perfil = () => {
       setUser(getUser.data)
     }
   }
+
+const handleEditar = () => {
+  setEditar((prevState) => !prevState)
+}
 
   const logOutUser = () => {
     const desejaSair = confirm('Você realmente deseja sair?')
@@ -56,12 +59,57 @@ const Perfil = () => {
     }
   }
  
+  const atualizarUser = async() => {
+    try {
+      const desejaAtualizar = confirm('Você realmente deseja atualizar sua conta?')
+      if(desejaAtualizar){
+        const dadosAtualizados = {}
+        if (userNome && userNome !== user.nome) {
+          dadosAtualizados.nome = userNome;
+        }
+        if (sobrenome && sobrenome !== user.sobrenome) {
+          dadosAtualizados.sobrenome = sobrenome;
+        }
+        if (telefone && telefone !== user.telefone) {
+          dadosAtualizados.telefone = telefone;
+        }
+        
+        
+        if (Object.keys(dadosAtualizados).length > 0) {
+          await api.patch(`/user/${id}`, dadosAtualizados, {
+            headers: { Authorization: `bearer ${token}` }
+          });
+          alert('Cadastro atualizado com sucesso.');
+          setUser({ ...user, ...dadosAtualizados });
+          setLoading(true)
+          setEditar(false)
+      }
+      }else setEditar(false)
+    } catch (error) {
+      console.log(error.message)
+    }
+  }
+
+  const cancelarPlano = async() => {
+    const desejaCancelar = confirm('Você realmente deseja cancelar seu plano? Essa ação não pode ser revertida.')
+    if(desejaCancelar) {
+      try {
+        const nullPlano = {nome: null, mensalidade: null, beneficios: null}
+        await api.patch(`/user/${id}`, {plano: nullPlano}, {headers: { Authorization: `bearer ${token}` }})
+        alert('Plano cancelado com sucesso.')
+        setLoading(true)
+      } catch (error) {
+        console.log(error.message)
+      }
+    }
+  }
+
   useEffect(()=>{
     handleGetRequest()
     setTimeout(() =>{
       setLoading(false)
-    }, 1500)
-  }, [])
+    }, 1000)
+  }, [isLoading])
 
   return (
     <div className="container-perfil">
@@ -94,21 +142,22 @@ const Perfil = () => {
               <div className="topinfo">
                 <p className="fonte-05">Informações Pessoais</p>
   
-                <Link className="linkEditarPessoais">  
+                <Link className="linkEditarPessoais" onClick={editar ? atualizarUser : handleEditar}>  
                   <img className="editIcon" src={Pencil}/>
-                  <p className="fonte-subtitulos">Editar</p>
+                  <p className={`fonte-subtitulos ${editar ? 'test' : ''}`}>{editar ? 'Confirmar' : 'Editar'}</p>
                 </Link>
               </div>
               
               <div className="pessoalinfo">
                 <div>
                   <p className="fonte-subtitulos">Nome</p>
-                  <p className="fonte-gerais">{user.nome}</p>
+                  {/* <p className="fonte-gerais">{user.nome}</p> */}
+                  <input type="text" defaultValue={user.nome} className={`${editar ? 'input-user' : 'text-user'} fonte-gerais`} readOnly={!editar} onChange={(e)=>setNome(e.target.value)} />
                 </div>
   
               <div className="sobrenomediv">
                   <p className="fonte-subtitulos">Sobrenome</p>
-                  <p className="fonte-gerais">{user.sobrenome}</p>
+                  <input type="text" defaultValue={user.sobrenome} className={`${editar ? 'input-user' : 'text-user'} fonte-gerais`} readOnly={!editar} onChange={(e)=>setSobrenome(e.target.value)} />
                 </div>
               </div>
   
@@ -118,17 +167,16 @@ const Perfil = () => {
                   <p className="fonte-gerais">{user.email}</p>
               </div>
   
-              {user.telefone ? <div className="phonediv">
+              {user.telefone || editar ? <div className="phonediv">
                   <p className="fonte-subtitulos">Telefone</p>
-                  <p className="fonte-gerais">{user.telefone}</p>
+                  <input type="number" defaultValue={user.telefone} className={`${editar ? 'input-user' : 'text-user'} fonte-gerais`} readOnly={!editar} onChange={(e)=>setTelefone(e.target.value)} />
               </div> : ''}
               
-  
               </div>
             </div>
   
             <div className="info2">
-            {user.plano && user.plano.nome ? (
+            {user.plano && user.plano.nome!=null ? (
               <div>
                 <div className="topinfo">
                   <p className="fonte-06">Seu Plano</p>
@@ -160,6 +208,7 @@ const Perfil = () => {
                       })}
                     </ul>
                   </div>
+                  <button className="btn-cancelar-plano" onClick={cancelarPlano}>Cancelar plano</button>
                 </div>
               </div>
             ) : <p className="fonte-subtitulos">Você ainda não possui um plano. <Link to='/planos' className="link-planos">Assine agora.</Link></p>}

@@ -778,3 +778,41 @@ hr{
     align-items: center;
     min-height: 100vh;
 }
+
+.text-user{
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: default;
+    transition: 0.5s;
+}
+
+.input-user{
+    border: none;
+    color: #fff;
+    padding: 0px 5px;
+    border-radius: 0.5vh;
+    background-color: #291249;
+    transition: 0.5s;
+}
+
+.test{
+    color: #46FF29;
+    background-color: #291249;
+    padding: 2px 7px;
+    border-radius: 0.5vh;
+    transition: 0.5s;
+}
+
+.btn-cancelar-plano{
+    margin-top: 20px;
+    border: none;
+    border-radius: 0.5vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: #46FF29;
+    background-color: #291249;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px black;
+}

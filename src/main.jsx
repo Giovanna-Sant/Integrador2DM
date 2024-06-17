@@ -75,7 +75,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           />
 
           <Route exact path="/" element={ <Logado2 /> } />
-          <Route path="/cadastro" element={  <Signup /> } />
+          <Route exact path="/cadastro" element={  <Signup /> } />
           <Route exact path="/login" element={  <Login /> } />
         </Routes>
       </AuthenticatedContextProvider>

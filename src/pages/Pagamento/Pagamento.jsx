@@ -81,9 +81,9 @@ const Pagamento = () => {
 
     <section className='container_main_pagamento'>
       <div className='container container_1 fonte-gerais cor-0'>
-        <p>Olá, <span className='cor-3'>{nome}</span>!</p>
+        <p>Olá <span className='cor-3'>{nome}</span>!</p>
         <p>
-          Aqui você está nos últimos passos para começar a trajetória em busca do shape inexplicável.
+          Aqui você está nos últimos passos para começar sua trajetória em busca do shape inexplicável.
           Por favor, selecione a forma de pagamento e em seguida, finalize a compra do seu <span className='cor-3'>plano</span>!
         </p>
       </div>
@@ -93,19 +93,19 @@ const Pagamento = () => {
           Selecione uma opção de <span className='cor-3'>pagamento:</span>
         </h2>
         <div className='botoess'>
-          <button className={opcaoSelecionada === 'pix' ? 'selected buttonPagamento pix' : 'buttonPagamento pix'} onClick={() => handleSelecao('pix')}>
+          <button className={opcaoSelecionada === 'pix' ? 'selected buttonPagamento pix' : 'buttonPagamento pix'} onClick={() => handleSelecao('Pix')}>
             Pix
           </button>
 
-          <button className={opcaoSelecionada === 'debito' ? 'selected buttonPagamento' : 'buttonPagamento'} onClick={() => handleSelecao('debito')}>
+          <button className={opcaoSelecionada === 'debito' ? 'selected buttonPagamento' : 'buttonPagamento'} onClick={() => handleSelecao('Débito')}>
             Debito
           </button>
 
-          <button className={opcaoSelecionada === 'credito' ? 'selected buttonPagamento' : 'buttonPagamento'} onClick={() => handleSelecao('credito')}>
+          <button className={opcaoSelecionada === 'credito' ? 'selected buttonPagamento' : 'buttonPagamento'} onClick={() => handleSelecao('Crédito')}>
             Credito
           </button>
 
-          <button className={opcaoSelecionada === 'boleto' ? 'selected buttonPagamento' : 'buttonPagamento'} onClick={() => handleSelecao('boleto')}>
+          <button className={opcaoSelecionada === 'boleto' ? 'selected buttonPagamento' : 'buttonPagamento'} onClick={() => handleSelecao('Boleto')}>
             Boleto
           </button>
         </div>
