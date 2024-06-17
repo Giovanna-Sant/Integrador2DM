@@ -5,6 +5,7 @@ import Brands from "../../components/Brands/Brands"
 import Footer from "../../components/Footer/Footer"
 
 import medalha from "src/img/Icons/medalha.svg"
+import sobreimg from "src/img/Background/sobre.jpg"
 
 const Home = () => {
     return (    
@@ -77,7 +78,7 @@ const Home = () => {
 
         <Brands/>
         <div className="confira">
-            <img src="src\img\Background\sobre.jpg" alt="Homem em posição de agachamento com rosto pintado prestes a levantar peso"></img>
+            <img src={sobreimg} alt="Homem em posição de agachamento com rosto pintado prestes a levantar peso"></img>
             <div className="sobre-info">
                 <p className="cor-0 fonte-03">CONHEÇA NOSSA</p>
                 <p className="cor-3 fonte-04">COMPANHIA</p>
