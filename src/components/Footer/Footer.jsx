@@ -30,8 +30,10 @@ const Footer = () => {
                     </div>
                     
                     <div className="linktree">
+                        <a href="https://linktr.ee/Gymrats99">
                         <img src={linktree} className="icon" alt="icon linktree"/>
                         <p className="cor-0 fonte-gerais">Linktree</p>
+                        </a>
                     </div>
                 </div>
             </div>

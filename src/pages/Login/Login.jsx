@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode"
 import Art from '../../components/Art/Art';
 import Header from '../../components/Header/Header'
+
+import logo from "src/img/Logo.svg"
+import emoji from "src/img/Icons/emoji.svg"
 import Loading from "../../components/Loading/Loading";
 
 const Login = () => {
@@ -67,8 +70,8 @@ const Login = () => {
                     </div>
                     <div className="login-right-box">
                         <div className="login-right-box-content">
-                            <img src="src\img\Logo.svg" alt="Logo da GymRats" id="login-flogo"/>
-                            <h2 id="login-ftitle">Bem Vindo (a) De <span id="bracao">Volta <img src="src\img\Icons\emoji.svg" alt="Braço musculoso palmeiras"/></span></h2>
+                            <img src={logo} alt="Logo da GymRats" id="login-flogo"/>
+                            <h2 id="login-ftitle">Bem Vindo (a) De <span id="bracao">Volta <img src={emoji} alt="Braço musculoso palmeiras"/></span></h2>
                             <p id="login-solcred">Por favor, digite suas credenciais para acessar sua conta</p>
                             <form method="post" id="cadastro" onSubmit={(e) => handleSubmit(e)}>
                                 <div className="login-ent">

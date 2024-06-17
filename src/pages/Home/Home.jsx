@@ -3,6 +3,9 @@ import { Link } from "react-router-dom"
 import Header from "../../components/Header/Header"
 import Brands from "../../components/Brands/Brands"
 import Footer from "../../components/Footer/Footer"
+
+import medalha from "src/img/Icons/medalha.svg"
+import sobreimg from "src/img/Background/sobre.jpg"
 import Planos from "../Planos/components/Context/Context"
 import Loading from "../../components/Loading/Loading"
 import { useEffect, useState } from "react"
@@ -55,10 +58,10 @@ const Home = () => {
                         </Link>
                     </div>
 
-                    <div className="cor-7 ouro">
-                        <img src="src\img\Icons\medalha.svg" alt="icon de medalha roxo"/>
-                        <h1 className="fonte-05">OURO</h1>
-                        <h2 className="fonte-gerais">R$ <span className="fonte-subtitulos">120,90</span>/mês</h2>
+                <div className="cor-7 ouro">
+                    <img src={medalha} alt="icon de medalha roxo"/>
+                    <h1 className="fonte-05">OURO</h1>
+                    <h2 className="fonte-gerais">R$ <span className="fonte-subtitulos">120,90</span>/mês</h2>
 
                         <div className="beneficios">
                             <p>Todos os benefícios dos planos INFERIORES</p>
@@ -90,12 +93,12 @@ const Home = () => {
                 </div>
             </div>
 
-            <Brands/>
-            <div className="confira">
-                <img src="src\img\Background\sobre.jpg" alt="Homem em posição de agachamento com rosto pintado prestes a levantar peso"></img>
-                <div className="sobre-info">
-                    <p className="cor-0 fonte-03">CONHEÇA NOSSA</p>
-                    <p className="cor-3 fonte-04">COMPANHIA</p>
+        <Brands/>
+        <div className="confira">
+            <img src={sobreimg} alt="Homem em posição de agachamento com rosto pintado prestes a levantar peso"></img>
+            <div className="sobre-info">
+                <p className="cor-0 fonte-03">CONHEÇA NOSSA</p>
+                <p className="cor-3 fonte-04">COMPANHIA</p>
 
                     <p className="cor-0 fonte-gerais txt">Nossa missão é ser uma companhia de assinatura de planos referência em <span className="cor-3">acessibilidade</span>. Para isso, contamos com uma equipe <span className="cor-3">diversa</span>. Confira!</p>
                     <Link to='/sobre'>
