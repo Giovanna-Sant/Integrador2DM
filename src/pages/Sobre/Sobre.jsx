@@ -12,21 +12,21 @@ import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Brands from '../../components/Brands/Brands'
 
-import graphic from "src/img/Icons/graphic.svg"
-import perfilSobre from "src/img/Icons/perfilSobre.svg"
-import person from "src/img/Icons/person.svg"
-import github from "src/img/Icons/github.svg"
-import linkedin from "src/img/Icons/Linkedin.svg"
+import graphic from "../../img/Icons/graphic.svg"
+import perfilSobre from "../../img/Icons/perfilSobre.svg"
+import person from "../../img/Icons/person.svg"
+import github from "../../img/Icons/github.svg"
+import linkedin from "../../img/Icons/Linkedin.svg"
 
-import iconCaua from "src/img/Devs/iconCaua.png"
-import iconGiovanna from "src\img\Devs\iconGiovanna.png"
-import iconGabriel from "src\img\Devs\iconGabriel.png"
-import iconErica from "src\img\Devs\iconErica.png"
-import iconJulia from "src\img\Devs\iconJulia.png"
-import iconLeonardo from "src\img\Devs\iconLeonardo.png"
-import iconLivia from "src\img\Devs\iconLivia.png"
-import iconJoao from "src\img\Devs\iconJoao.png"
-import iconErick from "src/img/Devs/iconErick.png"
+import iconCaua from "../../img/Devs/iconCaua.png"
+import iconGiovanna from "../../img/Devs/iconGiovanna.png"
+import iconGabriel from "../../img/Devs/iconGabriel.png"
+import iconErica from "../../img/Devs/iconErica.png"
+import iconJulia from "../../img/Devs/iconJulia.png"
+import iconLeonardo from "../../img/Devs/iconLeonardo.png"
+import iconLivia from "../../img/Devs/iconLivia.png"
+import iconJoao from "../../img/Devs/iconJoao.png"
+import iconErick from "../../img/Devs/iconErick.png"
 
 register();
 

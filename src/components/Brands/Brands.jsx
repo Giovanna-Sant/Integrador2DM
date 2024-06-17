@@ -1,9 +1,9 @@
 import './brands.css'
 
-import growth   from "src/img/Marcas/growth.png"
-import nike     from "src/img/Marcas/nike.png"
-import smartfit from "src/img/Marcas/smartfit.png"
-import insider  from "src/img/Marcas/insider.png"
+import growth   from "../../img/Marcas/growth.png"
+import nike     from "../../img/Marcas/nike.png"
+import smartfit from "../../img/Marcas/smartfit.png"
+import insider  from "../../img/Marcas/insider.png"
 
 const Brands = () => {
     return (

@@ -7,8 +7,8 @@ import { jwtDecode } from "jwt-decode"
 import Art from '../../components/Art/Art';
 import Header from '../../components/Header/Header'
 
-import logo from "src/img/Logo.svg"
-import emoji from "src/img/Icons/emoji.svg"
+import logo from "../../img/Logo.svg"
+import emoji from "../../img/Icons/emoji.svg"
 import Loading from "../../components/Loading/Loading";
 
 const Login = () => {

@@ -8,7 +8,7 @@ import Art from "../../components/Art/Art";
 import Header from '../../components/Header/Header'
 import { AuthenticatedContext } from '../../Context/AuthenticatedContext';
 
-import logo from "src/img/Logo.svg"
+import logo from "../../img/Logo.svg"
 
 const Signup = () => {
 
