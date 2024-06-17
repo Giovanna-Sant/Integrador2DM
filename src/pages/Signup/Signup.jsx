@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import Art from "../../components/Art/Art";
 import Header from '../../components/Header/Header'
-import { AuthenticatedContext } from '../../Context/AuthenticatedContext';
-
 import logo from "../../img/Logo.svg"
 
 const Signup = () => {
@@ -29,8 +27,6 @@ const Signup = () => {
     confirma_senha: "",
   });
   const navigate = useNavigate();
-  const { setAuthenticated } = useContext(AuthenticatedContext);
-
   const postNewUser = async (e) => {
     try {
       e.preventDefault();
@@ -41,18 +37,8 @@ const Signup = () => {
 
         alert("Pessoa cadastrada com sucesso.");
 
-        const req = await api.post("/auth/login", {
-          email: newUser.email,
-          senha: newUser.senha,
-        });
-      const id = jwtDecode(req.data.token).id;
-      setAuthenticated(true);       
-      console.log(req.data.token);
-
-      localStorage.setItem("tokennz", req.data.token);
-      localStorage.setItem("id", id);
-
-      navigate("/home");
+        
+      navigate("/login");
 
     } catch (error) {
       alert(error.message);
