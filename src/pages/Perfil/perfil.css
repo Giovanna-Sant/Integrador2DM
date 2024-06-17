@@ -1,6 +1,6 @@
 .divPerfil{
     border-radius: 25px;
-    background-color: #59289F;
+    background-color: #59289f;
     color: white;
     margin : 10vh 6vh;
     padding: 3vh;
@@ -107,6 +107,7 @@ hr{
 
 .linkPerfil{
     display: flex;
+    cursor: default;
     justify-content: flex-start;
     gap: 1vw;
     color: #fff;
@@ -769,4 +770,11 @@ hr{
     border: none;
     cursor: pointer;
     margin-left: 1vw;
+}
+
+.container-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }

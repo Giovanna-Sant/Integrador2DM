@@ -1,3 +1,9 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 .img-background-home {
     background-image: url("../../img/Background/img_intro.png");
     background-size: cover;

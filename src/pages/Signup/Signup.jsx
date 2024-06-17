@@ -1,6 +1,6 @@
 import '../Signup/sigup.css'
 import api from "../../config/axios";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
@@ -9,6 +9,16 @@ import Header from '../../components/Header/Header'
 import { AuthenticatedContext } from '../../Context/AuthenticatedContext';
 
 const Signup = () => {
+
+    const user = localStorage.getItem('authenticated');
+    
+    useEffect(() => {
+        if(user === 'true'){
+            navigate('/home')
+        }
+    })
+
+
   const [newUser, setNewUser] = useState({
     nome: "",
     sobrenome: "",
@@ -41,7 +51,7 @@ const Signup = () => {
       localStorage.setItem("id", id);
 
       navigate("/home");
-      
+
     } catch (error) {
       alert(error.message);
     }

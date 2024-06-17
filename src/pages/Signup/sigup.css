@@ -81,6 +81,7 @@
  
 .cad-button {
     background: #632EB5;
+    border: none;
     color: white;
     border-radius: 5px;
     width: 100%;

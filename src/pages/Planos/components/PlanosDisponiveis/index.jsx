@@ -4,28 +4,9 @@ import check from '../../../../img/check.png'
 import notCheck from '../../../../img/false.png'
 import Responsividade from '../Responsividade'
 import { Link } from "react-router-dom"
-import { createContext } from "react";
-
-export const PlanoSelecionado = createContext({
-    plano: "",
-    valor: ""
-})
+import Planos from '../Context/Context'
 
 export default function PlanosDisponiveis(){
-
-    function setBronze(){
-        PlanoSelecionado.plano='bronze';
-        PlanoSelecionado.valor='55,90';
-    }
-
-    function setPrata(){
-        PlanoSelecionado.plano='prata';
-        PlanoSelecionado.valor='79,90'
-    }
-    function setOuro(){
-        PlanoSelecionado.plano='ouro';
-        PlanoSelecionado.valor='120,90'
-    }
 
     return(
         <>
@@ -80,9 +61,9 @@ export default function PlanosDisponiveis(){
                 </div>
                 <div className='containerBtn'>
                     <div className='botoesPlanos'>
-                        <Link className='btnAssinar cor-7 fonte-03 link' to='/pagamento' onClick={setBronze}>assinar</Link>
-                        <Link className='btnAssinar cor-7 fonte-03 link' to='/pagamento' onClick={setPrata}>assinar</Link>
-                        <Link className='btnAssinar cor-7 fonte-03 link' to='/pagamento' onClick={setOuro}>assinar</Link>
+                        <Link className='btnAssinar cor-7 fonte-03 link' to='/pagamento' onClick={Planos.setBronze}>assinar</Link>
+                        <Link className='btnAssinar cor-7 fonte-03 link' to='/pagamento' onClick={Planos.setPrata}>assinar</Link>
+                        <Link className='btnAssinar cor-7 fonte-03 link' to='/pagamento' onClick={Planos.setOuro}>assinar</Link>
                     </div>
                 </div>
             </div>
