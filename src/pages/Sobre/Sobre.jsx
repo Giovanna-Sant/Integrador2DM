@@ -1,5 +1,4 @@
 import './sobre.css'
-import './slider.css'
 
 import 'swiper/css'
 import 'swiper/css/navigation'

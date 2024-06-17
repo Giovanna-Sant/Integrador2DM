@@ -87,3 +87,17 @@
         border-radius: 0%;
     }
 }
+
+@media screen and (max-width: 600px){
+    .img-background-sobre {
+        background-position: right
+    }
+
+    .sub {
+        font-size: 22px;
+    }
+
+    .fonte-02 {
+        font-size: 64px;
+    }
+}
