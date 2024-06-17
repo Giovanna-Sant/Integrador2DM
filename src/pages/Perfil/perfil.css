@@ -533,6 +533,7 @@ hr{
     .linkPerfil{
         align-items: center;
         justify-content: center;
+        margin-bottom: 15px;
     }
 
     .linkDelete{
