@@ -1,6 +1,6 @@
 import "./sigup_login.css";
 import api from "../../config/axios"
-import {  useState } from "react"
+import {  useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode"
@@ -9,14 +9,13 @@ import Header from '../../components/Header/Header'
 
 const Login = () => {
     const navigate = useNavigate();
-
-    // useEffect(() => {
-    //     const logado = localStorage.getItem('authenticated')
-
-    //     if(logado){
-    //         navigate('/home');
-    //     }
-    // }, [])
+    const user = localStorage.getItem('authenticated');
+    
+    useEffect(() => {
+        if(user === 'true'){
+            navigate('/home')
+        }
+    })
 
     const [validar, setValidar] = useState({email: '', senha: ''})
     const handleSubmit = async  (e) => {

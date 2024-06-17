@@ -181,6 +181,7 @@ main{
 
 @media(max-width: 600px){
     .planosContainer{
+        box-sizing: border-box;
         width: 100%;
     }
     .fixMargin{

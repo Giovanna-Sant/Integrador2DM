@@ -3,9 +3,7 @@
     grid-template-columns: 50% 50%;
 }
 
-* {
-    box-sizing: border-box;
-}
+
 
 .cad-right{
     background-image: linear-gradient(180deg, #2C1650, #190B30, #030105);
