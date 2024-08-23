@@ -12,7 +12,7 @@
 
 <ol>
 
-  <li>Clone esse repositório:<br><code>git clone https://github.com/leoguims/Integrador2DM.git</code></li><br>
+  <li>Clone esse repositório:<br><code>git clone https://github.com/Giovanna-Sant/Integrador2DM.git</code></li><br>
 
   <li>Navegue até o diretório gerado:<br><code>cd Integrador2DM</code></li><br>
 
